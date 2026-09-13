@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#080c14">
+    <meta name="apple-mobile-web-app-title" content="Ideark">
+    <meta name="application-name" content="Ideark">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web para restaurantes y bares — Más reservas | Ideark</title>
-    <meta name="description" content="Creamos webs profesionales con SEO local para restaurantes, bares y negocios de hostelería en España. Aparece en Google y consigue más reservas y comensales.">
+    <title>Web para restaurantes y bares | Carta y reservas | Ideark</title>
+    <meta name="description" content="Web para restaurantes en España: carta, reservas y Google Maps. 890€. Menos comisión de apps, más mesas. WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ideark.es/web-para-restaurantes">
-    <meta property="og:title" content="Web para restaurantes y bares — Más reservas | Ideark">
-    <meta property="og:description" content="Creamos webs profesionales con SEO local para restaurantes, bares y negocios de hostelería en España. Aparece en Google y consigue más reservas y comensales.">
+    <meta property="og:title" content="Web para restaurantes y bares | Carta y reservas | Ideark">
+    <meta property="og:description" content="Web para restaurantes en España: carta, reservas y Google Maps. 890€. Menos comisión de apps, más mesas. WhatsApp.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ideark.es/web-para-restaurantes">
     <meta property="og:locale" content="es_ES">
@@ -66,39 +72,31 @@
           "name": "¿Cuánto cuesta una web para un restaurante?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Desde 299€ de alta más 99€ al mes con el plan Local. Para restaurantes que quieren carta amplia y posicionar fuerte, el plan Crecimiento es 599€ de alta más 149€ al mes."
+            "text": "890€ pago único. Si hay carta larga, reservas complejas o varias salas, lo vemos. SEO mensual opcional."
           }
         },
         {
           "@type": "Question",
-          "name": "¿En cuánto tiempo está lista?",
+          "name": "¿Podéis poner la carta en PDF?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "En 14 días tu web está online y lista para recibir reservas."
+            "text": "Sí. O en página. Tú eliges cómo la actualizas."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Puedo actualizar la carta yo mismo?",
+          "name": "¿Sirve si ya estoy en TheFork o Instagram?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Te dejamos la carta fácil de actualizar y, si lo prefieres, nos encargamos nosotros de los cambios."
+            "text": "Sí. La web es tuya. Los portales siguen si quieres; dejas de depender solo de ellos."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Pueden los clientes reservar mesa desde la web?",
+          "name": "¿Hacéis restaurantes fuera de Valencia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Añadimos un botón o formulario de reserva, y cada solicitud te llega al instante por correo o WhatsApp."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Apareceré en Google cuando busquen dónde comer en mi zona?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ese es el objetivo. Trabajamos el SEO local con tu web, tu ficha de Google Business y páginas por zona."
+            "text": "Sí. Toda España. Carta y ficha de tu local, no un texto de Sagunto."
           }
         }
       ]
@@ -126,6 +124,8 @@
         nav.scrolled { background: rgba(8,12,20,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 14px 0; }
         .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 30px; display: flex; align-items: center; justify-content: space-between; }
         .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.6rem; color: white; text-decoration: none; letter-spacing: -0.5px; }
+        .logo { display: inline-flex; align-items: center; gap: 10px; }
+        .logo img { width: 40px; height: 40px; border-radius: 50%; display: block; }
         .logo span { color: var(--accent); }
         .nav-links { display: flex; gap: 36px; list-style: none; }
         .nav-links a { color: var(--text2); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.3px; }
@@ -294,7 +294,7 @@
 
 <nav id="navbar">
     <div class="nav-inner">
-        <a href="/" class="logo">ide<span>ark</span></a>
+        <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="/#servicios">Servicios</a></li>
             <li><a href="/#proceso">Cómo trabajamos</a></li>
@@ -313,17 +313,17 @@
     <div class="hero-grid"></div>
     <div class="hero-inner">
         <nav class="crumb" aria-label="Migas de pan"><a href="/">Inicio</a> / Web para restaurantes</nav>
-        <div class="hero-badge">Webs y SEO local para restaurantes</div>
-        <h1>Una web para tu <em>restaurante</em> que te llena las mesas</h1>
-        <p>Cuando alguien busca dónde comer cerca, queremos que te encuentre a ti. Te montamos una web profesional con SEO local, tu carta y reserva fácil para que te lleguen más comensales.</p>
+        <div class="hero-badge">Restaurantes · carta · reservas</div>
+        <h1>La mesa se llena en Google Maps,<br>no en una <em>app</em> al 30%</h1>
+        <p>El cliente mira fotos, carta, horario y cómo reservar. Si solo existes en Instagram o en un portal, pagas comisión o dependes del algoritmo. Web propia: 890€. Toda España, del menú del día al asador de carretera.</p>
         <div class="hero-btns">
-            <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20un%20restaurante%20y%20quiero%20una%20web%20para%20conseguir%20m%C3%A1s%20reservas" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Quiero más clientes</a>
-            <a href="#precios" class="btn-secondary">Ver precios <i class="fas fa-arrow-right"></i></a>
+            <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20un%20restaurante%20en%20España%20y%20quiero%20una%20web" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp — restaurantes</a>
+            <a href="#precios" class="btn-secondary">Ver precios</a>
         </div>
         <div class="hero-stats">
-            <div class="stat-item"><div class="stat-num">14<span> días</span></div><div class="stat-label">Tu web publicada y lista</div></div>
-            <div class="stat-item"><div class="stat-num">0<span>€</span></div><div class="stat-label">Presupuesto sin compromiso</div></div>
-            <div class="stat-item"><div class="stat-num">100<span>%</span></div><div class="stat-label">Trato directo contigo</div></div>
+            <div class="stat-item"><div class="stat-num">890<span>€</span></div><div class="stat-label">Pago único, sin atarte</div></div>
+            <div class="stat-item"><div class="stat-num">14<span> días</span></div><div class="stat-label">Online, con WhatsApp</div></div>
+            <div class="stat-item"><div class="stat-num">ES</div><div class="stat-label">Toda España por WhatsApp</div></div>
         </div>
     </div>
 </section>
@@ -331,26 +331,28 @@
 <section class="servicios">
     <div class="container">
         <div class="servicios-header">
-            <span class="section-tag">Por qué te interesa</span>
-            <h2 class="section-title">Más visibilidad,<br>más llamadas, más clientes</h2>
-            <p class="section-sub">Una web bonita no basta. La tuya está hecha para que te encuentren en tu zona y para que el cliente te contacte sin pensarlo.</p>
+            <span class="section-tag">Sala, no oficio de urgencia</span>
+            <h2 class="section-title">Carta, reserva y take away<br>son tres clics distintos</h2>
+            <p class="section-sub">Un bar de menú no se vende como un restaurante de carta o un local de playa. Tampoco como un fontanero. Aquí gana quien actualiza platos, enseña el comedor y pone un WhatsApp de reservas que no se pierde entre stories.</p>
         </div>
         <div class="servicios-grid">
             <div class="srv-card">
                 <div class="srv-icon" style="background:rgba(0,229,255,0.1);color:var(--accent)"><i class="fas fa-location-dot"></i></div>
-                <h3>Te encuentran con hambre</h3>
-                <p>Apareces en Google cuando buscan dónde comer en tu zona. Ese es el momento de la decisión.</p>
+                <h3>Carta que se cambia</h3>
+                <p>PDF o página de platos que puedas actualizar sin llamar a un informático cada lunes.</p>
             </div>
             <div class="srv-card">
-                <div class="srv-icon" style="background:rgba(124,58,237,0.15);color:#a78bfa"><i class="fas fa-utensils"></i></div>
-                <h3>Tu carta, siempre a mano</h3>
-                <p>El cliente ve tu carta, tus platos y tus precios desde el móvil antes de venir.</p>
+                <div class="srv-icon" style="background:rgba(124,58,237,0.15);color:#a78bfa"><i class="fas fa-briefcase"></i></div>
+                <h3>Reservar en un toque</h3>
+                <p>WhatsApp, teléfono o formulario. El de fuera no quiere registrarse en tu «club».</p>
             </div>
             <div class="srv-card">
-                <div class="srv-icon" style="background:rgba(245,158,11,0.12);color:var(--accent3)"><i class="fas fa-calendar-check"></i></div>
-                <h3>Reservar es fácil</h3>
-                <p>Botón de reserva, llamada y WhatsApp visibles. La mesa se reserva en un toque.</p>
-            </div></div>
+                <div class="srv-icon" style="background:rgba(245,158,11,0.12);color:var(--accent3)"><i class="fas fa-comments"></i></div>
+                <h3>Fotos de tu sala</h3>
+                <p>Platos reales, terraza, horario, alérgenos si los tienes. Stock de pasta no llena mesas en tu barrio.</p>
+            </div>
+        </div>
+        <p class="section-sub" style="margin-top:28px;max-width:720px">Trabajamos locales de toda España. No diseñamos una marca de 20.000€: una web que se vea en el móvil, con carta y botón de reservar, y una ficha de Google que no esté abandonada.</p>
     </div>
 </section>
 
@@ -359,53 +361,53 @@
         <div class="porque-grid">
             <div>
                 <span class="section-tag">Qué incluye</span>
-                <h2 class="section-title">Qué incluye tu web<br>de restaurante</h2>
-                <p class="section-sub">Todo pensado para que alguien que busca dónde comer elija tu mesa.</p>
+                <h2 class="section-title">Qué incluye tu web de restaurante</h2>
+                <p class="section-sub">Para Maps, para quien te busca por el nombre, y para repetir.</p>
             </div>
             <div class="porque-visual">
                 <div class="consigues-head">Tu web, lista para vender</div>
-                <div class="consigues-sub">Todo incluido y configurado por nosotros</div>
+                <div class="consigues-sub">Toda España · texto de tu oficio, no un clon</div>
                 <ul class="consigues-list">
-                    <li><i class="fas fa-check"></i> Carta y menús siempre actualizados</li>
-                    <li><i class="fas fa-check"></i> Galería de fotos de tus platos y del local</li>
-                    <li><i class="fas fa-check"></i> Botón de reserva, llamada y WhatsApp visibles</li>
-                    <li><i class="fas fa-check"></i> Página con horarios, ubicación y cómo llegar</li>
-                    <li><i class="fas fa-check"></i> Ficha de Google Business optimizada y reseñas</li>
-                    <li><i class="fas fa-check"></i> Formulario de reserva que te avisa al instante</li></ul>
+                    <li><i class="fas fa-check"></i> Inicio, carta, reservas, contacto, legal</li>
+                    <li><i class="fas fa-check"></i> Enlace claro a Google Maps y reseñas</li>
+                    <li><i class="fas fa-check"></i> WhatsApp de reservas y teléfono de sala</li>
+                    <li><i class="fas fa-check"></i> Horarios y ubicación imposibles de perder</li>
+                    <li><i class="fas fa-check"></i> SEO local del nombre del local y de la zona</li>
+                    <li><i class="fas fa-check"></i> 890€ o plan con SEO si quieres platos/zona mes a mes</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-
 <section class="precios" id="precios">
     <div class="container">
         <span class="section-tag">Precios</span>
         <h2 class="section-title">Empezar es fácil<br>y sin letra pequeña</h2>
-        <p class="section-sub">Eliges un plan, pagas un alta y una cuota mensual clara. Todos incluyen dominio, alojamiento y trato directo conmigo.</p>
+        <p class="section-sub">Pago único si no quieres cuotas, o un plan mensual con SEO local. Dominio, alojamiento y trato directo incluidos.</p>
         <div class="precios-grid">
-            <div class="precio-card">
-                <div class="precio-nombre">Local</div>
-                <div class="precio-desde">Alta</div>
-                <div class="precio-num"><span>€</span>299</div>
-                <div class="precio-mes">+ <strong>99€/mes</strong> · web, alojamiento y soporte</div>
+            <div class="precio-card featured">
+                <div class="precio-nombre">Sin cuotas</div>
+                <div class="precio-desde">Pago único</div>
+                <div class="precio-num"><span>€</span>890</div>
+                <div class="precio-mes">Una sola vez · hosting 12 meses incluido</div>
                 <ul class="precio-features">
                     <li><i class="fas fa-check"></i> Web profesional de hasta 5 páginas</li>
                     <li><i class="fas fa-check"></i> Botón de llamada y de WhatsApp</li>
                     <li><i class="fas fa-check"></i> Formulario de contacto con aviso</li>
-                    <li><i class="fas fa-check"></i> SEO local básico y Google Business</li>
+                    <li><i class="fas fa-check"></i> SEO on-page y ficha Google Business</li>
                     <li><i class="fas fa-check"></i> Se ve perfecta en el móvil</li>
                     <li><i class="fas fa-check"></i> Lista y online en 14 días</li>
                 </ul>
-                <a href="https://wa.me/34665327929?text=Hola,%20me%20interesa%20el%20plan%20Local%20(299%E2%82%AC%20%2B%2099%E2%82%AC%2Fmes)" class="btn-precio btn-precio-outline" target="_blank" rel="noopener noreferrer">Empezar con Local</a>
+                <a href="https://wa.me/34665327929?text=Hola,%20me%20interesa%20el%20pago%20unico%20(890%E2%82%AC)" class="btn-precio btn-precio-outline" target="_blank" rel="noopener noreferrer">Empezar sin cuotas</a>
             </div>
-            <div class="precio-card featured">
+            <div class="precio-card">
                 <div class="precio-nombre">Crecimiento</div>
                 <div class="precio-desde">Alta</div>
                 <div class="precio-num"><span>€</span>599</div>
                 <div class="precio-mes">+ <strong>149€/mes</strong> · web, SEO local y soporte</div>
                 <ul class="precio-features">
-                    <li><i class="fas fa-check"></i> Todo lo del plan Local</li>
+                    <li><i class="fas fa-check"></i> Web profesional incluida</li>
                     <li><i class="fas fa-check"></i> SEO local avanzado en tu zona</li>
                     <li><i class="fas fa-check"></i> Páginas por servicio y por ciudad</li>
                     <li><i class="fas fa-check"></i> Respuestas automáticas en WhatsApp</li>
@@ -430,20 +432,15 @@
                 <a href="https://wa.me/34665327929?text=Hola,%20quiero%20un%20presupuesto%20a%20medida%20(plan%20Premium)" class="btn-precio btn-precio-outline" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a>
             </div>
         </div>
-        <p class="precios-nota">Sin permanencia. Si en algún momento no te encaja, lo dejas cuando quieras.</p>
+        <p class="precios-nota">Pago único desde 890€ si no quieres cuotas. Planes mensuales sin permanencia. Hosting del pago único: 9€/mes desde el segundo año.</p>
     </div>
 </section>
 
 <section class="seo-links">
 <div class="container">
 
-<span class="section-tag">
-Zonas donde trabajamos
-</span>
-
-<h2 class="section-title">
-Diseño web para restaurantes en otras ciudades
-</h2>
+<span class="section-tag">Locales en toda España</span>
+        <h2 class="section-title">Tu restaurante + la página de tu ciudad</h2>
 
 <div class="seo-links-grid">
 
@@ -468,24 +465,21 @@ Diseño web para restaurantes en otras ciudades
         <div class="faq-list">
             <details class="faq-item">
                 <summary>¿Cuánto cuesta una web para un restaurante?</summary>
-                <p>Desde 299€ de alta más 99€ al mes con el plan Local. Para restaurantes que quieren carta amplia y posicionar fuerte, el plan Crecimiento es 599€ de alta más 149€ al mes.</p>
+                <p>890€ pago único. Si hay carta larga, reservas complejas o varias salas, lo vemos. SEO mensual opcional.</p>
             </details>
             <details class="faq-item">
-                <summary>¿En cuánto tiempo está lista?</summary>
-                <p>En 14 días tu web está online y lista para recibir reservas.</p>
+                <summary>¿Podéis poner la carta en PDF?</summary>
+                <p>Sí. O en página. Tú eliges cómo la actualizas.</p>
             </details>
             <details class="faq-item">
-                <summary>¿Puedo actualizar la carta yo mismo?</summary>
-                <p>Te dejamos la carta fácil de actualizar y, si lo prefieres, nos encargamos nosotros de los cambios.</p>
+                <summary>¿Sirve si ya estoy en TheFork o Instagram?</summary>
+                <p>Sí. La web es tuya. Los portales siguen si quieres; dejas de depender solo de ellos.</p>
             </details>
             <details class="faq-item">
-                <summary>¿Pueden los clientes reservar mesa desde la web?</summary>
-                <p>Sí. Añadimos un botón o formulario de reserva, y cada solicitud te llega al instante por correo o WhatsApp.</p>
+                <summary>¿Hacéis restaurantes fuera de Valencia?</summary>
+                <p>Sí. Toda España. Carta y ficha de tu local, no un texto de Sagunto.</p>
             </details>
-            <details class="faq-item">
-                <summary>¿Apareceré en Google cuando busquen dónde comer en mi zona?</summary>
-                <p>Ese es el objetivo. Trabajamos el SEO local con tu web, tu ficha de Google Business y páginas por zona.</p>
-            </details></div>
+        </div>
     </div>
 </section>
 
@@ -504,37 +498,22 @@ Diseño web para restaurantes en otras ciudades
     </div>
 </section>
 
-<section class="cta-section">
+<section class="cta-section" id="contacto">
     <div class="container">
         <span class="section-tag">Hablemos</span>
-        <h2 class="section-title">¿Quieres más reservas<br>para tu restaurante?</h2>
-        <p>Cuéntanos tu negocio por WhatsApp. Te respondemos en menos de 24 horas con un presupuesto claro y sin compromiso.</p>
+        <h2 class="section-title">¿Restaurante o bar<br>sin web que reserve?</h2>
+        <p>20 minutos. Precio el mismo día. Toda España.</p>
         <div class="cta-btns">
             <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20un%20restaurante%20y%20quiero%20una%20web%20para%20conseguir%20m%C3%A1s%20reservas" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
             <a href="mailto:info@ideark.es" class="btn-secondary"><i class="fas fa-envelope"></i> Enviar email</a>
         </div>
     </div>
 </section>
-
-
-
-<section class="cta-section" id="contacto" style="padding:80px 30px;text-align:center;background:var(--bg2);border-top:1px solid var(--border)">
-    <div style="max-width:720px;margin:0 auto">
-        <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);display:block;margin-bottom:12px">Presupuesto gratis</span>
-        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:14px">¿Hablamos de tu web?</h2>
-        <p style="color:var(--text2);line-height:1.75;margin-bottom:28px">Presupuesto claro en 24h. Formulario o WhatsApp — como te resulte más fácil.</p>
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-            <a href="/contacto" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:14px 24px;border-radius:10px;font-weight:700;text-decoration:none">Pedir presupuesto</a>
-            <a href="https://wa.me/34665327929?text=Hola,%20quiero%20m%C3%A1s%20clientes%20para%20mi%20negocio%20local" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:#25d366;color:white;padding:14px 24px;border-radius:10px;font-weight:700;text-decoration:none"><i class="fab fa-whatsapp"></i> 665 327 929</a>
-        </div>
-    </div>
-</section>
-
 <footer>
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="/" class="logo">ide<span>ark</span></a>
+                <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a>
                 <p>Web profesional, SEO local y automatización útil para negocios de servicios en España. Más llamadas, más WhatsApps, más clientes.</p>
             </div>
             <div class="footer-col">
@@ -560,9 +539,7 @@ Diseño web para restaurantes en otras ciudades
                 <ul>
                     <li><a href="https://wa.me/34665327929" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
                     <li><a href="mailto:info@ideark.es"><i class="fas fa-envelope"></i> info@ideark.es</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-                </ul>
+</ul>
             </div>
         </div>
         <div class="footer-bottom">
@@ -596,6 +573,8 @@ document.querySelectorAll('.srv-card, .precio-card, .faq-item').forEach(el => {
 });
 </script>
 
+    <script src="/js/config.js"></script>
     <script src="/js/consent.js" defer></script>
+    <script src="/js/tracking.js" defer></script>
 </body>
 </html>

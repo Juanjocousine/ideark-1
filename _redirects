@@ -16,7 +16,46 @@
 /web-para-veterinarios          /web-para-veterinarios.html         200
 /web-para-autonomos             /web-para-autonomos.html            200
 
-# CIUDADES
+# CIUDADES (España)
+/diseno-web-ourense      /diseno-web-ourense.html         200
+/diseno-web-jaen      /diseno-web-jaen.html         200
+/diseno-web-lleida      /diseno-web-lleida.html         200
+/diseno-web-santiago      /diseno-web-santiago.html         200
+/diseno-web-albacete      /diseno-web-albacete.html         200
+/diseno-web-huelva      /diseno-web-huelva.html         200
+/diseno-web-cadiz      /diseno-web-cadiz.html         200
+/diseno-web-leon      /diseno-web-leon.html         200
+/diseno-web-burgos      /diseno-web-burgos.html         200
+/diseno-web-logrono      /diseno-web-logrono.html         200
+/diseno-web-badajoz      /diseno-web-badajoz.html         200
+/diseno-web-toledo      /diseno-web-toledo.html         200
+/diseno-web-girona      /diseno-web-girona.html         200
+/diseno-web-tarragona      /diseno-web-tarragona.html         200
+/diseno-web-almeria      /diseno-web-almeria.html         200
+/diseno-web-salamanca      /diseno-web-salamanca.html         200
+/diseno-web-santander      /diseno-web-santander.html         200
+/diseno-web-pamplona      /diseno-web-pamplona.html         200
+/diseno-web-cartagena      /diseno-web-cartagena.html         200
+/diseno-web-elche      /diseno-web-elche.html         200
+/diseno-web-oviedo      /diseno-web-oviedo.html         200
+/diseno-web-gijon      /diseno-web-gijon.html         200
+/diseno-web-vigo      /diseno-web-vigo.html         200
+/diseno-web-valladolid      /diseno-web-valladolid.html         200
+/diseno-web-cordoba      /diseno-web-cordoba.html         200
+/diseno-web-granada      /diseno-web-granada.html         200
+/diseno-web-las-palmas      /diseno-web-las-palmas.html         200
+/diseno-web-palma      /diseno-web-palma.html         200
+/diseno-web-bilbao      /diseno-web-bilbao.html         200
+/diseno-web-zaragoza      /diseno-web-zaragoza.html         200
+/diseno-web-sevilla      /diseno-web-sevilla.html         200
+/diseno-web-madrid      /diseno-web-madrid.html         200
+/diseno-web-barcelona   /diseno-web-barcelona.html      200
+/diseno-web-murcia      /diseno-web-murcia.html         200
+/diseno-web-alicante    /diseno-web-alicante.html       200
+/diseno-web-malaga      /diseno-web-malaga.html         200
+/diseno-web-coruna      /diseno-web-coruna.html         200
+
+# CIUDADES (Comunitat Valenciana)
 /diseno-web-valencia    /diseno-web-valencia.html       200
 /diseno-web-castellon   /diseno-web-castellon.html      200
 /diseno-web-sagunto     /diseno-web-sagunto.html        200
@@ -41,6 +80,7 @@
 
 # PÁGINAS GENERALES
 /contacto       /contacto.html      200
+/empezar        /empezar.html       200
 /gracias        /gracias.html       200
 /aviso-legal    /aviso-legal.html   200
 /privacidad     /privacidad.html    200

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#080c14">
+    <meta name="apple-mobile-web-app-title" content="Ideark">
+    <meta name="application-name" content="Ideark">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Ideark — Presupuesto gratuito en 24 horas</title>
@@ -22,7 +28,7 @@
         nav.scrolled{background:rgba(8,12,20,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 0}
         .nav-inner{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
         .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none}
-        .logo span{color:var(--accent)}
+        .logo{display:inline-flex;align-items:center;gap:10px}.logo img{width:40px;height:40px;border-radius:50%;display:block}.logo span{color:var(--accent)}
         .nav-links{display:flex;gap:36px;list-style:none}
         .nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
         .nav-links a:hover{color:white}
@@ -79,7 +85,7 @@
 <body>
 <nav id="navbar">
     <div class="nav-inner">
-        <a href="/" class="logo">ide<span>ark</span></a>
+        <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="/#servicios">Servicios</a></li>
             <li><a href="/#precios">Precios</a></li>
@@ -103,7 +109,7 @@
         <div class="contacto-grid">
             <div>
                 <h2 class="form-title">Solicita tu presupuesto gratuito</h2>
-                <p class="form-sub">Rellena el formulario y te contactamos en menos de 24 horas. Sin compromiso y sin tecnicismos.</p>
+                <p class="form-sub">Nombre, teléfono y ciudad. Te respondemos en menos de 24 horas.</p>
                 <form name="contacto-ideark" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias">
                     <input type="hidden" name="form-name" value="contacto-ideark">
                     <p style="display:none"><label>No rellenar <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -118,57 +124,21 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="tu@email.com" required>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Tipo de negocio</label>
-                            <select name="negocio" required>
-                                <option value="">Selecciona tu sector</option>
-                                <option>Restaurante o bar</option>
-                                <option>Fontanero o electricista</option>
-                                <option>Peluquería o estética</option>
-                                <option>Clínica o dentista</option>
-                                <option>Reformas o construcción</option>
-                                <option>Pintor</option>
-                                <option>Alquiler vacacional</option>
-                                <option>Abogado o gestoría</option>
-                                <option>Inmobiliaria</option>
-                                <option>Taller o automoción</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Ciudad / zona</label>
-                            <input type="text" name="ciudad" placeholder="Ej. Sagunto, Valencia…" required>
-                        </div>
+                        <label>Ciudad / zona</label>
+                        <input type="text" name="ciudad" placeholder="Ej. Madrid, Valencia, tu pueblo…" required>
                     </div>
                     <div class="form-group">
                         <label>Plan de interés</label>
                         <select name="plan" id="plan">
                             <option value="">Aún no lo sé</option>
-                            <option value="Local">Local — 299€ + 99€/mes</option>
+                            <option value="Pago único">Sin cuotas — 890€</option>
                             <option value="Crecimiento">Crecimiento — 599€ + 149€/mes</option>
                             <option value="Premium">Premium — a medida</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>¿Qué necesitas?</label>
-                        <select name="servicio" required>
-                            <option value="">Selecciona un servicio</option>
-                            <option>Web profesional</option>
-                            <option>Web + SEO local</option>
-                            <option>Web + SEO + Chatbot IA</option>
-                            <option>Publicidad Google o Meta Ads</option>
-                            <option>Automatización con IA</option>
-                            <option>Todo incluido (pack completo)</option>
-                            <option>No sé, necesito asesoramiento</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Cuéntanos tu proyecto</label>
-                        <textarea name="mensaje" placeholder="Describe tu negocio y qué quieres conseguir con la web..." required></textarea>
+                        <label>¿Algo más? (opcional)</label>
+                        <textarea name="mensaje" placeholder="Qué haces y si ya tienes web…"></textarea>
                     </div>
                     <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar solicitud</button>
                 </form>
@@ -209,7 +179,7 @@
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <div class="contact-item-label">Ubicación</div>
-                            <div class="contact-item-val">Faura / Sagunto · Toda España online</div>
+                            <div class="contact-item-val">Calle Rubau 2, 46512 Faura (junto a Sagunto)</div>
                         </div>
                     </div>
                     <div class="garantias">
@@ -238,6 +208,8 @@ const hamburger=document.getElementById('hamburger');
 const navLinks=document.getElementById('navLinks');
 hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');hamburger.innerHTML=navLinks.classList.contains('open')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';});
 </script>
+    <script src="/js/config.js"></script>
     <script src="/js/consent.js" defer></script>
+    <script src="/js/tracking.js" defer></script>
 </body>
 </html>

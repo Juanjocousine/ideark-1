@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#080c14">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Ideark</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root{--bg:#080c14;--bg3:#111927;--accent:#00e5ff;--text:#e8edf5;--text2:#8a96a8;--border:rgba(255,255,255,0.07)}
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+        nav{padding:20px 30px;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+        .logo img{width:40px;height:40px;border-radius:50%;display:block}
+        .logo span{color:var(--accent)}
+        main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+        .card{background:var(--bg3);border:1px solid var(--border);border-radius:24px;padding:60px 50px;text-align:center;max-width:580px;width:100%}
+        .code{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;color:var(--accent);margin-bottom:8px}
+        h1{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;margin-bottom:14px}
+        p{color:var(--text2);line-height:1.75;font-size:.95rem;margin-bottom:16px}
+        .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+        .btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none}
+        .btn-s{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);color:var(--text);padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none}
+        @media(max-width:480px){.card{padding:40px 24px}}
+    </style>
+</head>
+<body>
+<nav><a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a></nav>
+<main>
+    <div class="card">
+        <div class="code">404</div>
+        <h1>Esta página no existe</h1>
+        <p>La URL no está en Ideark. Puede que esté mal escrita o que se haya movido. Vuelve al inicio o pide presupuesto por WhatsApp.</p>
+        <div class="btns">
+            <a href="/" class="btn-p">Ir al inicio</a>
+            <a href="/#ciudades" class="btn-s">Ver ciudades</a>
+            <a href="/contacto" class="btn-s">Contacto</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
