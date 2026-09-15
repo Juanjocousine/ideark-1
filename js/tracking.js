@@ -44,9 +44,21 @@
       origen.value = location.pathname;
       form.appendChild(origen);
     }
-    form.addEventListener("submit", function () {
-      fire("generate_lead", { method: "form", page: location.pathname });
-    });
+
+    var ciudad = params.get("ciudad");
+    var ciudadInput = form.querySelector('[name="ciudad"]');
+    if (ciudad && ciudadInput && !ciudadInput.value) ciudadInput.value = ciudad;
+
+    var plan = params.get("plan");
+    var planInput = form.querySelector('[name="plan"]');
+    if (plan && planInput) {
+      var ok = Array.prototype.some.call(planInput.options, function (o) { return o.value === plan; });
+      if (ok) planInput.value = plan;
+    }
+
+    var oficio = params.get("oficio");
+    var mensaje = form.querySelector('[name="mensaje"]');
+    if (oficio && mensaje && !mensaje.value) mensaje.value = "Oficio: " + oficio;
   });
 
   document.addEventListener("click", function (ev) {

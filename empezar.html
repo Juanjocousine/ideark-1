@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web profesional en 14 días | Ideark — toda España</title>
-    <meta name="description" content="Web para tu negocio local lista en 14 días. 890€ pago único o 599€ + 149€/mes con SEO. Presupuesto por escrito el mismo día. WhatsApp 665 327 929.">
+    <meta name="description" content="Web lista en 14 días. Desde 399€ sin cuotas, o PRO 890€ + 149€/mes con SEO local. Presupuesto por escrito el mismo día. WhatsApp 665 327 929.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ideark.es/empezar">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +24,9 @@
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
         nav{padding:18px 30px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
-        .logo img{width:44px;height:44px;border-radius:50%;display:block}
-        .logo span{color:var(--accent)}
+        .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:0}
+        .logo img{width:44px;height:44px;border-radius:50%;display:block;margin-right:10px}
+        .logo .logo-word{color:#fff}.logo .logo-word span{color:var(--accent)}
         .nav-wa{background:#25d366;color:white;padding:10px 18px;border-radius:8px;font-weight:700;text-decoration:none;font-size:.88rem}
         .wrap{max-width:1040px;margin:0 auto;padding:48px 24px 80px}
         h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.5px;margin:16px 0 14px}
@@ -37,6 +37,10 @@
         form{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:28px}
         label{display:block;font-size:.78rem;font-weight:600;color:var(--text2);margin:0 0 8px;text-transform:uppercase;letter-spacing:.4px}
         input,select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--text);font:inherit;margin-bottom:16px}
+        input[type="checkbox"]{width:auto;padding:0;margin:3px 8px 0 0;flex-shrink:0}
+        .form-legal{font-size:.78rem;color:var(--text2);line-height:1.5;margin:0 0 16px}
+        .form-legal label{display:flex;align-items:flex-start;gap:8px;text-transform:none;letter-spacing:0;font-weight:400;margin:0;cursor:pointer}
+        .form-legal a{color:var(--accent)}
         button{width:100%;background:var(--accent);color:#080c14;border:none;padding:15px;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer}
         .prices{display:grid;gap:14px;margin-top:20px}
         .price{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
@@ -45,7 +49,7 @@
         @media(max-width:800px){.grid{grid-template-columns:1fr}}
     </style>
     <meta property="og:title" content="Web profesional en 14 días | Ideark — toda España">
-    <meta property="og:description" content="890€ pago único o 599€ + 149€/mes con SEO local. Desde Faura, junto a Sagunto. Toda España por WhatsApp.">
+    <meta property="og:description" content="Desde 399€, o PRO 890€ + 149€/mes con SEO local. Desde Faura, junto a Sagunto. Toda España por WhatsApp.">
     <meta property="og:image" content="https://ideark.es/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -54,7 +58,7 @@
 </head>
 <body>
 <nav>
-    <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="44" height="44">ide<span>ark</span></a>
+    <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="44" height="44"><span class="logo-word">ide<span>ark</span></span></a>
     <a class="nav-wa" href="https://wa.me/34665327929?text=Hola,%20vengo%20del%20anuncio%20y%20quiero%20una%20web" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </nav>
 <div class="wrap">
@@ -62,16 +66,17 @@
         <div>
             <p style="color:var(--accent);font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase">Diseño web + SEO local · toda España</p>
             <h1>Tu web lista en 14 días. Más llamadas y WhatsApps.</h1>
-            <p class="lead">Para autónomos y negocios locales de cualquier ciudad. Precio cerrado. Puedes pagar una vez o una cuota mensual con SEO. Habla con quien hace el trabajo.</p>
+            <p class="lead">Para autónomos y negocios locales de cualquier ciudad. Precio cerrado. 399€ si solo quieres estar online. PRO si quieres que te encuentren. Habla con quien hace el trabajo.</p>
             <div class="pills">
-                <span>890€ pago único</span>
+                <span>Desde 399€</span>
                 <span>Hosting 12 meses</span>
                 <span>Presupuesto en 24h</span>
                 <span>Sin permanencia</span>
             </div>
             <div class="prices">
-                <div class="price"><strong>890€</strong> Web profesional, una sola vez. Hosting el primer año incluido.</div>
-                <div class="price"><strong>599€ + 149€/mes</strong> Web + SEO local + WhatsApp automático + informe mensual.</div>
+                <div class="price"><strong>399€</strong> Plan Web. 5 páginas, una sola vez. <a href="/plan-web" style="color:var(--accent)">Qué incluye</a></div>
+                <div class="price"><strong>890€ + 149€/mes</strong> PRO. Hasta 20 páginas y SEO local. El recomendado. <a href="/plan-pro" style="color:var(--accent)">Qué incluye</a></div>
+                <div class="price"><strong>1.499€ + 199€/mes</strong> Premium. Hasta 40 páginas. <a href="/plan-premium" style="color:var(--accent)">Qué incluye</a></div>
             </div>
             <p class="fine">Calle Rubau 2, 46512 Faura (junto a Sagunto). También por WhatsApp: 665 327 929.</p>
         </div>
@@ -87,13 +92,16 @@
             <input id="telefono" name="telefono" type="tel" required placeholder="Tu teléfono">
             <label for="ciudad">Ciudad</label>
             <input id="ciudad" name="ciudad" required placeholder="Madrid, Valencia, tu pueblo…">
+            <label for="email">Email (opcional)</label>
+            <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email">
             <label for="plan">Plan</label>
             <select id="plan" name="plan">
                 <option value="">Aún no lo sé</option>
-                <option value="Pago único">Sin cuotas — 890€</option>
-                <option value="Crecimiento">Crecimiento — 599€ + 149€/mes</option>
-                <option value="Premium">Premium — a medida</option>
+                <option value="Plan Web">Plan Web — 399€ (5 páginas)</option>
+                <option value="PRO">PRO — 890€ + 149€/mes</option>
+                <option value="Premium">Premium — 1.499€ + 199€/mes</option>
             </select>
+            <p class="form-legal"><label><input type="checkbox" name="privacidad" value="aceptada" required> He leído y acepto la <a href="/privacidad">política de privacidad</a>.</label></p>
             <button type="submit">Quiero mi presupuesto</button>
         </form>
     </div>

@@ -72,7 +72,7 @@
           "name": "¿Cuánto cuesta una web para peluquería?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "890€. Si hay varios salones, lo vemos. SEO local opcional."
+            "text": "Plan Web 399€: 5 páginas, sin cuota. PRO 890€ + 149€/mes: hasta 20 páginas y SEO local (recomendado). Premium 1.499€ + 199€/mes. Precio escrito el mismo día. El detalle está en cada plan."
           }
         },
         {
@@ -124,9 +124,9 @@
         nav.scrolled { background: rgba(8,12,20,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 14px 0; }
         .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 30px; display: flex; align-items: center; justify-content: space-between; }
         .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.6rem; color: white; text-decoration: none; letter-spacing: -0.5px; }
-        .logo { display: inline-flex; align-items: center; gap: 10px; }
-        .logo img { width: 40px; height: 40px; border-radius: 50%; display: block; }
-        .logo span { color: var(--accent); }
+        .logo { display: inline-flex; align-items: center; gap: 0; }
+        .logo img { width: 40px; height: 40px; border-radius: 50%; display: block; margin-right: 10px; }
+        .logo .logo-word { color: #fff; } .logo .logo-word span { color: var(--accent); }
         .nav-links { display: flex; gap: 36px; list-style: none; }
         .nav-links a { color: var(--text2); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.3px; }
         .nav-links a:hover { color: white; }
@@ -172,6 +172,10 @@
         .srv-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 24px; }
         .srv-card h3 { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: white; }
         .srv-card p { color: var(--text2); font-size: .9rem; line-height: 1.7; }
+        .guia-local { padding: 80px 0 100px; background: var(--bg); border-top: 1px solid var(--border); }
+        .guia-local .guia-inner { max-width: 760px; }
+        .guia-local h2 { font-family: 'Syne', sans-serif; font-size: clamp(1.25rem, 2.4vw, 1.7rem); font-weight: 800; margin: 36px 0 14px; line-height: 1.3; }
+        .guia-local p { color: var(--text2); line-height: 1.85; margin-bottom: 16px; font-size: 1.02rem; }
         .precios { padding: 120px 0; background: var(--bg2); }
         .precios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 64px; }
         .precio-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 40px 36px; position: relative; transition: all 0.3s; }
@@ -294,7 +298,7 @@
 
 <nav id="navbar">
     <div class="nav-inner">
-        <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a>
+        <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="/#servicios">Servicios</a></li>
             <li><a href="/#proceso">Cómo trabajamos</a></li>
@@ -302,7 +306,7 @@
             <li><a href="/#ciudades">Ciudades</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/contacto" class="nav-cta" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a></li>
+            <li><a href="/contacto?oficio=Peluquer%C3%ADas" class="nav-cta">Pedir presupuesto</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
     </div>
@@ -315,13 +319,13 @@
         <nav class="crumb" aria-label="Migas de pan"><a href="/">Inicio</a> / Web para peluquerías</nav>
         <div class="hero-badge">Peluquerías · barrio · agenda</div>
         <h1>Instagram enseña el corte;<br>Google llena la <em>agenda</em></h1>
-        <p>El vecino busca «peluquería cerca» o el nombre del salón. Si solo estás en Instagram, no existes a las 9 de un martes para quien no te sigue. 890€. Toda España: salón de barrio, barbería o centro de color.</p>
+        <p>El vecino busca «peluquería cerca» o el nombre del salón. Si solo estás en Instagram, no existes a las 9 de un martes para quien no te sigue. Desde 399€. Toda España: salón de barrio, barbería o centro de color.</p>
         <div class="hero-btns">
             <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20una%20peluquería%20en%20España%20y%20quiero%20una%20web" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp — peluquerías</a>
             <a href="#precios" class="btn-secondary">Ver precios</a>
         </div>
         <div class="hero-stats">
-            <div class="stat-item"><div class="stat-num">890<span>€</span></div><div class="stat-label">Pago único, sin atarte</div></div>
+            <div class="stat-item"><div class="stat-num">399<span>€</span></div><div class="stat-label">Desde, sin cuota</div></div>
             <div class="stat-item"><div class="stat-num">14<span> días</span></div><div class="stat-label">Online, con WhatsApp</div></div>
             <div class="stat-item"><div class="stat-num">ES</div><div class="stat-label">Toda España por WhatsApp</div></div>
         </div>
@@ -373,10 +377,29 @@
                     <li><i class="fas fa-check"></i> Enlace a Instagram sin sustituir la web</li>
                     <li><i class="fas fa-check"></i> Ficha Google Business del local</li>
                     <li><i class="fas fa-check"></i> SEO del nombre y de «peluquería + barrio»</li>
-                    <li><i class="fas fa-check"></i> 890€ o SEO mensual</li>
+                    <li><i class="fas fa-check"></i> 399€ o Plan PRO</li>
                 </ul>
             </div>
         </div>
+    </div>
+</section>
+
+
+<section class="guia-local" id="guia">
+    <div class="container guia-inner">
+        <span class="section-tag">Guía del oficio</span>
+        <h2 class="section-title" style="margin-bottom:12px">Web para peluquerías</h2>
+        <h2>Instagram enseña el corte; Google llena la silla del martes</h2>
+        <p>El vecino que no te sigue busca «peluquería cerca» o el nombre del salón a las nueve de un martes. Si solo existes en Instagram, ese hueco lo ocupa el de la esquina con ficha y tarifa. La web no sustituye el reclamo de Reels: hace que quien ya quiere ir sepa precio, horario y cómo reservar en diez segundos.</p>
+        <p>Nadie lee un manifiesto de marca. Quiere corte, color, mechas, barbería, horario y un WhatsApp. Si escondes precios, asume que te leen como caro o desordenado. Un «desde» honesto cierra más que un lookbook sin números.</p>
+        <h2>Salón de barrio, barbería y color</h2>
+        <p>No son el mismo cliente. La barbería vende silla y rapidez. El salón de color vende tiempo y confianza. El de barrio vende que te conocen. Si mezcláis los tres tonos en una home copiada de un spa, no convencéis a ninguno. Servicios en lista, equipo si sois varias, fotos del local real —el de vuestro local, no un loft de Pinterest.</p>
+        <p>Reserva: WhatsApp o el sistema que ya uséis (Treatwell u otro). No os obligamos a otro login. Si la agenda va llena, la web igual sirve: quien busca vuestro nombre tiene que ver el teléfono y el mapa, no una landing de «próximamente». Un martes a las once el hueco lo gana quien aparece en Google, no quien tiene el Reel más nuevo.</p>
+        <h2>Varios salones</h2>
+        <p>Si hay más de un local, lo vemos. A veces cabe en PRO con una página por salón. A veces es Premium. Mentir una sola dirección cuando sois tres tiendas lía a Google y al cliente que va al local cerrado. Horarios distintos, fichas distintas o muy bien explicadas.</p>
+        <p>399€ para un salón que ya tiene calle. PRO si queréis servicios y barrio en buscador. Ideark desde Faura; el salón en cualquier ciudad. 14 días. Reserva 100€ o 200€. No prometemos que os llene agosto: prometemos que el que os busque no se vaya al de enfrente por no encontrar tarifa.</p>
+        <h2>Encargo entre cortes</h2>
+        <p>Lista de servicios y precios (o rangos), fotos del equipo y del local, cómo reserváis. Precio escrito el mismo día. Texto de peluquería, no de taller ni de clínica. Google nota el copia-pega; el cliente del barrio también.</p>
     </div>
 </section>
 
@@ -384,55 +407,55 @@
     <div class="container">
         <span class="section-tag">Precios</span>
         <h2 class="section-title">Empezar es fácil<br>y sin letra pequeña</h2>
-        <p class="section-sub">Pago único si no quieres cuotas, o un plan mensual con SEO local. Dominio, alojamiento y trato directo incluidos.</p>
-        <div class="precios-grid">
-            <div class="precio-card featured">
-                <div class="precio-nombre">Sin cuotas</div>
-                <div class="precio-desde">Pago único</div>
-                <div class="precio-num"><span>€</span>890</div>
-                <div class="precio-mes">Una sola vez · hosting 12 meses incluido</div>
-                <ul class="precio-features">
-                    <li><i class="fas fa-check"></i> Web profesional de hasta 5 páginas</li>
-                    <li><i class="fas fa-check"></i> Botón de llamada y de WhatsApp</li>
-                    <li><i class="fas fa-check"></i> Formulario de contacto con aviso</li>
-                    <li><i class="fas fa-check"></i> SEO on-page y ficha Google Business</li>
-                    <li><i class="fas fa-check"></i> Se ve perfecta en el móvil</li>
-                    <li><i class="fas fa-check"></i> Lista y online en 14 días</li>
-                </ul>
-                <a href="https://wa.me/34665327929?text=Hola,%20me%20interesa%20el%20pago%20unico%20(890%E2%82%AC)" class="btn-precio btn-precio-outline" target="_blank" rel="noopener noreferrer">Empezar sin cuotas</a>
-            </div>
+        <p class="section-sub">Plan Web para estar online. PRO para que te encuentren. El detalle está en cada plan.</p>
+                <div class="precios-grid">
             <div class="precio-card">
-                <div class="precio-nombre">Crecimiento</div>
-                <div class="precio-desde">Alta</div>
-                <div class="precio-num"><span>€</span>599</div>
-                <div class="precio-mes">+ <strong>149€/mes</strong> · web, SEO local y soporte</div>
+                <div class="precio-nombre">Plan Web</div>
+                <div class="precio-desde">Sin cuotas</div>
+                <div class="precio-num"><span>€</span>399</div>
+                <div class="precio-mes">Una sola vez · 5 páginas · hosting 12 meses</div>
                 <ul class="precio-features">
-                    <li><i class="fas fa-check"></i> Web profesional incluida</li>
-                    <li><i class="fas fa-check"></i> SEO local avanzado en tu zona</li>
-                    <li><i class="fas fa-check"></i> Páginas por servicio y por ciudad</li>
-                    <li><i class="fas fa-check"></i> Respuestas automáticas en WhatsApp</li>
-                    <li><i class="fas fa-check"></i> Blog para posicionar tu negocio</li>
-                    <li><i class="fas fa-check"></i> Informe mensual sencillo de resultados</li>
+                    <li><i class="fas fa-check"></i> Inicio, servicios, zona, contacto y legal</li>
+                    <li><i class="fas fa-check"></i> WhatsApp y llamada</li>
+                    <li><i class="fas fa-check"></i> Sin mantenimiento mensual</li>
+                    <li><i class="fas fa-check"></i> No incluye landings de pueblos</li>
+                    <li><i class="fas fa-check"></i> En 6 meses puedes pasar a PRO por 491€</li>
+                    <li><i class="fas fa-check"></i> Lista en 14 días</li>
                 </ul>
-                <a href="https://wa.me/34665327929?text=Hola,%20me%20interesa%20el%20plan%20Crecimiento%20(599%E2%82%AC%20%2B%20149%E2%82%AC%2Fmes)" class="btn-precio btn-precio-filled" target="_blank" rel="noopener noreferrer">Empezar con Crecimiento</a>
+                <a href="/plan-web" class="btn-precio btn-precio-outline">Qué incluye</a>
+            </div>
+            <div class="precio-card featured">
+                <div class="precio-nombre">PRO</div>
+                <div class="precio-desde">Recomendado</div>
+                <div class="precio-num"><span>€</span>890</div>
+                <div class="precio-mes">+ <strong>149€/mes</strong> · hasta 20 páginas · sin permanencia</div>
+                <ul class="precio-features">
+                    <li><i class="fas fa-check"></i> Hasta 20 páginas (oficios y pueblos)</li>
+                    <li><i class="fas fa-check"></i> SEO local y ficha de Google</li>
+                    <li><i class="fas fa-check"></i> 1 o 2 páginas nuevas al mes</li>
+                    <li><i class="fas fa-check"></i> WhatsApp automático e informe</li>
+                    <li><i class="fas fa-check"></i> Si venías del 399€: solo 491€ más</li>
+                    <li><i class="fas fa-check"></i> Ads se cotizan aparte</li>
+                </ul>
+                <a href="/plan-pro" class="btn-precio btn-precio-filled">Qué incluye</a>
             </div>
             <div class="precio-card">
                 <div class="precio-nombre">Premium</div>
-                <div class="precio-desde">Proyecto</div>
-                <div class="precio-num"><small>A medida</small></div>
-                <div class="precio-mes">Presupuesto adaptado a tu negocio</div>
+                <div class="precio-desde">Varias zonas</div>
+                <div class="precio-num"><span>€</span>1499</div>
+                <div class="precio-mes">+ <strong>199€/mes</strong> · hasta 40 páginas</div>
                 <ul class="precio-features">
-                    <li><i class="fas fa-check"></i> Todo lo del plan Crecimiento</li>
-                    <li><i class="fas fa-check"></i> Web más grande o varias zonas</li>
-                    <li><i class="fas fa-check"></i> Automatizaciones a tu medida</li>
-                    <li><i class="fas fa-check"></i> Campañas de Google Ads</li>
-                    <li><i class="fas fa-check"></i> Reservas o catálogo online</li>
-                    <li><i class="fas fa-check"></i> Soporte prioritario directo</li>
+                    <li><i class="fas fa-check"></i> Todo lo del PRO</li>
+                    <li><i class="fas fa-check"></i> Hasta 40 páginas</li>
+                    <li><i class="fas fa-check"></i> Hasta 5 páginas nuevas al mes</li>
+                    <li><i class="fas fa-check"></i> Más zonas y soporte primero</li>
+                    <li><i class="fas fa-check"></i> Reservas o catálogo sencillo</li>
+                    <li><i class="fas fa-check"></i> Google Ads aparte</li>
                 </ul>
-                <a href="https://wa.me/34665327929?text=Hola,%20quiero%20un%20presupuesto%20a%20medida%20(plan%20Premium)" class="btn-precio btn-precio-outline" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a>
+                <a href="/plan-premium" class="btn-precio btn-precio-outline">Qué incluye</a>
             </div>
         </div>
-        <p class="precios-nota">Pago único desde 890€ si no quieres cuotas. Planes mensuales sin permanencia. Hosting del pago único: 9€/mes desde el segundo año.</p>
+        <p class="precios-nota">El Plan Web es para estar online. El PRO es para posicionar. Premium si cubres más zonas. El detalle está en cada plan. Hosting del Plan Web: 9€/mes desde el segundo año. Sin permanencia en los mensuales.</p>
     </div>
 </section>
 
@@ -465,7 +488,7 @@
         <div class="faq-list">
             <details class="faq-item">
                 <summary>¿Cuánto cuesta una web para peluquería?</summary>
-                <p>890€. Si hay varios salones, lo vemos. SEO local opcional.</p>
+                <p>Plan Web 399€: 5 páginas, sin cuota. PRO 890€ + 149€/mes: hasta 20 páginas y SEO local (recomendado). Premium 1.499€ + 199€/mes. Precio escrito el mismo día. El detalle está en <a href="/plan-web">Plan Web</a>, <a href="/plan-pro">PRO</a> y <a href="/plan-premium">Premium</a>.</p>
             </details>
             <details class="faq-item">
                 <summary>¿Podéis poner precios?</summary>
@@ -505,7 +528,7 @@
         <p>20 minutos. Precio el mismo día. Toda España.</p>
         <div class="cta-btns">
             <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20una%20peluquer%C3%ADa%20y%20quiero%20una%20web%20para%20conseguir%20m%C3%A1s%20clientes" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
-            <a href="mailto:info@ideark.es" class="btn-secondary"><i class="fas fa-envelope"></i> Enviar email</a>
+            <a href="/contacto?oficio=Peluquer%C3%ADas" class="btn-secondary"><i class="fas fa-paper-plane"></i> Pedir presupuesto</a>
         </div>
     </div>
 </section>
@@ -513,7 +536,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="/" class="logo"><img src="/logo.png" alt="Ideark" width="40" height="40">ide<span>ark</span></a>
+                <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
                 <p>Web profesional, SEO local y automatización útil para negocios de servicios en España. Más llamadas, más WhatsApps, más clientes.</p>
             </div>
             <div class="footer-col">

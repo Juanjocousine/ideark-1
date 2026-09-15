@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ideark.es/</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
-  <url><loc>https://ideark.es/empezar</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.97</priority></url>
+  <url><loc>https://ideark.es/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
+  <url><loc>https://ideark.es/plan-web</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://ideark.es/plan-pro</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.97</priority></url>
+  <url><loc>https://ideark.es/plan-premium</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://ideark.es/empezar</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.97</priority></url>
   <url><loc>https://ideark.es/contacto</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
   <url><loc>https://ideark.es/blog</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
   <url><loc>https://ideark.es/web-para-abogados</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
