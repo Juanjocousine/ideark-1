@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico?v=20260919" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20260919">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260919">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#080c14">
     <meta name="apple-mobile-web-app-title" content="Ideark">
@@ -12,11 +12,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web para alquiler vacacional | Reservas directas | Ideark</title>
-    <meta name="description" content="Web para viviendas vacacionales en España: reservas directas, menos comisión. 890€. Costa, rural o ciudad. WhatsApp.">
+    <meta name="description" content="Web para viviendas vacacionales en la Comunitat Valenciana: reservas directas, menos comisión. Desde 399€. Costa, rural o ciudad. WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ideark.es/web-para-alquiler-vacacional">
     <meta property="og:title" content="Web para alquiler vacacional | Reservas directas | Ideark">
-    <meta property="og:description" content="Web para viviendas vacacionales en España: reservas directas, menos comisión. 890€. Costa, rural o ciudad. WhatsApp.">
+    <meta property="og:description" content="Web para viviendas vacacionales en la Comunitat Valenciana: reservas directas, menos comisión. Desde 399€. Costa, rural o ciudad. WhatsApp.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ideark.es/web-para-alquiler-vacacional">
     <meta property="og:locale" content="es_ES">
@@ -35,15 +35,16 @@
       "description": "Creamos webs profesionales con SEO local para apartamentos y alojamientos de alquiler vacacional en España. Recibe reservas directas y depende menos de las plataformas.",
       "serviceType": "Diseño web y SEO local",
       "areaServed": {
-        "@type": "Country",
-        "name": "España"
+        "@type": "AdministrativeArea",
+        "name": "Comunitat Valenciana"
       },
       "provider": {
         "@type": "ProfessionalService",
         "name": "Ideark",
         "url": "https://ideark.es",
-        "telephone": "+34665327929",
-        "email": "info@ideark.es"
+        "telephone": "+34611661557",
+        "email": "info@ideark.es",
+        "openingHours": ["Mo-Fr 08:00-20:00", "Sa 10:00-18:00"]
       },
       "url": "https://ideark.es/web-para-alquiler-vacacional"
     },
@@ -93,10 +94,10 @@
         },
         {
           "@type": "Question",
-          "name": "¿Toda España?",
+          "name": "¿Solo en Sagunto?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. El texto es de tu destino, no un clon de oficio."
+            "text": "Sí. Hablamos de tu destino y de esa casa, no de un oficio de averías."
           }
         }
       ]
@@ -137,10 +138,7 @@
         .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0,229,255,0.12) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 80% 60%, rgba(124,58,237,0.1) 0%, transparent 50%), radial-gradient(ellipse 30% 30% at 20% 80%, rgba(245,158,11,0.06) 0%, transparent 50%); }
         .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%); }
         .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
-        .crumb { font-size: .82rem; color: var(--text2); margin-bottom: 22px; animation: fadeUp 0.8s ease both; }
-        .crumb a { color: var(--text2); text-decoration: none; }
-        .crumb a:hover { color: var(--accent); }
-        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.2); color: var(--accent); padding: 6px 16px; border-radius: 100px; font-size: .82rem; font-weight: 600; margin-bottom: 28px; letter-spacing: 0.5px; animation: fadeUp 0.8s ease both; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.2); color: var(--accent); padding: 6px 16px; border-radius: 100px; font-size: .82rem; font-weight: 600; margin-bottom: 28px; letter-spacing: 0.5px; animation: fadeUp 0.8s ease both; }
         .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
         @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.5)} }
         .hero h1 { font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3.5vw, 3.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 24px; animation: fadeUp 0.8s ease 0.1s both; }
@@ -316,18 +314,17 @@
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-inner">
-        <nav class="crumb" aria-label="Migas de pan"><a href="/">Inicio</a> / Web para alquiler vacacional</nav>
         <div class="hero-badge">Vacacional · reservas directas · España</div>
         <h1>Airbnb se lleva la comisión;<br>la web cobra <em>la tuya</em></h1>
-        <p>Portales sirven para descubrir. La repetición y el margen se quedan en una web propia: fotos, calendario, normas, WhatsApp de reserva. Desde 399€. Costa, interior o ciudad, en toda España.</p>
+        <p>Portales sirven para descubrir. La repetición y el margen se quedan en una web propia: fotos, calendario, normas, WhatsApp de reserva. Desde 399€. Costa, interior o ciudad, en la Comunitat Valenciana.</p>
         <div class="hero-btns">
-            <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20alquiler%20vacacional%20en%20España%20y%20quiero%20una%20web" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp — vacacional</a>
+            <a href="https://wa.me/34611661557?text=Hola%2C%20tengo%20alquiler%20vacacional%20en%20España%20y%20quiero%20una%20web" class="btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp — vacacional</a>
             <a href="#precios" class="btn-secondary">Ver precios</a>
         </div>
         <div class="hero-stats">
             <div class="stat-item"><div class="stat-num">399<span>€</span></div><div class="stat-label">Desde, sin cuota</div></div>
             <div class="stat-item"><div class="stat-num">14<span> días</span></div><div class="stat-label">Online, con WhatsApp</div></div>
-            <div class="stat-item"><div class="stat-num">ES</div><div class="stat-label">Toda España por WhatsApp</div></div>
+            <div class="stat-item"><div class="stat-num">ES</div><div class="stat-label">WhatsApp y videollamada</div></div>
         </div>
     </div>
 </section>
@@ -337,7 +334,7 @@
         <div class="servicios-header">
             <span class="section-tag">Directo vs portal</span>
             <h2 class="section-title">Una casa no es un oficio<br>de averías</h2>
-            <p class="section-sub">Aquí se vende la estancia: camas, playa o centro, normas, fianza, cómo llegar. Copiar la landing de un fontanero es exactamente lo que Google marca como página basura. Esta URL casi no está indexada: la reescribimos para que merezca serlo.</p>
+            <p class="section-sub">Aquí se vende la estancia: camas, playa o centro, normas, fianza, cómo llegar. No sirve el mismo texto que un fontanero de urgencias. El huésped decide en el móvil, con fotos reales de esa casa.</p>
         </div>
         <div class="servicios-grid">
             <div class="srv-card">
@@ -356,7 +353,7 @@
                 <p>«Apartamento en [pueblo]» y el nombre de la casa. Eso no lo cubre una página de electricistas.</p>
             </div>
         </div>
-        <p class="section-sub" style="margin-top:28px;max-width:720px">Uno o varios alojamientos. Si son 15 y motor de reservas, es otro presupuesto. Si es un piso o una casa, 890€ suele bastar. Toda España, no solo Cullera o Sagunto.</p>
+        <p class="section-sub" style="margin-top:28px;max-width:720px">Uno o varios alojamientos. Si son 15 y motor de reservas, es otro presupuesto. Si es un piso o una casa, 890€ suele bastar. Comunitat Valenciana, no solo Cullera o Sagunto.</p>
     </div>
 </section>
 
@@ -370,14 +367,14 @@
             </div>
             <div class="porque-visual">
                 <div class="consigues-head">Tu web, lista para vender</div>
-                <div class="consigues-sub">Toda España · texto de tu oficio, no un clon</div>
+                <div class="consigues-sub">Comunitat Valenciana · texto de tu oficio</div>
                 <ul class="consigues-list">
                     <li><i class="fas fa-check"></i> Home del alojamiento (o de varios, si caben)</li>
                     <li><i class="fas fa-check"></i> Galería, servicios, entorno, contacto</li>
                     <li><i class="fas fa-check"></i> WhatsApp de reserva y enlace a tu motor si ya lo tienes</li>
                     <li><i class="fas fa-check"></i> SEO del destino y del nombre</li>
                     <li><i class="fas fa-check"></i> Legal de alquiler turístico a nivel de avisos (el registro es tuyo)</li>
-                    <li><i class="fas fa-check"></i> 890€ o a medida si hay catálogo grande</li>
+                    <li><i class="fas fa-check"></i> Plan PRO 890€ + 149€/mes, o a medida si hay catálogo grande</li>
                 </ul>
             </div>
         </div>
@@ -390,13 +387,13 @@
         <span class="section-tag">Guía del oficio</span>
         <h2 class="section-title" style="margin-bottom:12px">Web para alquiler vacacional</h2>
         <h2>El portal descubre; la web se queda el margen</h2>
-        <p>Airbnb y Booking sirven para que te encuentre quien aún no te conoce. Cada reserva allí se lleva comisión. La repetición, las fechas de temporada baja y el huésped que ya os tiene en el WhatsApp se quedan en una web vuestra: fotos, distribución, normas, cómo llegar, fianza. Copiar la landing de un fontanero en un piso de playa es exactamente el tipo de página que Google trata como relleno.</p>
+        <p>Airbnb y Booking sirven para que te encuentre quien aún no te conoce. Cada reserva allí se lleva comisión. La repetición, las fechas de temporada baja y el huésped que ya os tiene en el WhatsApp se quedan en una web vuestra: fotos, distribución, normas, cómo llegar, fianza. Un piso de playa no se explica como una urgencia de fontanero.</p>
         <p>Se vende la estancia, no una urgencia. Camas, vistas o centro, mascotas, fiestas, check-in. El huésped decide en el móvil, a menudo en el tren. Fotos buenas de esa casa, no de un hotel de stock. Si tenéis una vivienda, la ficha es una. Si tenéis un puñado, se habla de listado. Si tenéis un motor de reservas y veinte casas, eso ya no es el Plan Web.</p>
         <h2>Temporada, normativa y lo que no se improvisar</h2>
         <p>Alta y baja, mínimo de noches, tasas turísticas si aplican, registro autonómico cuando toca. Mentir disponibilidad o normas de fiestas os sale en la review. La web tiene que decir lo mismo que el anuncio del portal; si no, el huésped se siente engañado dos veces.</p>
         <p>Cómo se reserva: WhatsApp y un mensaje de fechas, o un calendario si ya lo tenéis. No montamos un Channel Manager de 200€/mes dentro del 399€. Enlazamos lo que uséis o dejamos la conversación directa, que en muchos alquileres es lo que cierra.</p>
         <h2>Costa, interior o ciudad</h2>
-        <p>Un apartamento junto a la playa no se explica como un caserío ni como un piso junto a un hospital. Distancia a playa, parking, ruido, orientación. En ciudad: metro, maletas, piso. En interior: calefacción, acceso, pueblo más cercano. Por eso el texto de esta URL no es un clon de restaurantes ni de clínicas.</p>
+        <p>Un apartamento junto a la playa no se explica como un caserío ni como un piso junto a un hospital. Distancia a playa, parking, ruido, orientación. En ciudad: maletas y acceso. En interior: calefacción, acceso, pueblo más cercano. Se habla de esa casa, no de un restaurante ni de una clínica.</p>
         <p>399€ una casa o un escaparate sencillo. PRO si queréis varias fichas y SEO de zona. Motor y muchas casas: presupuesto. Ideark desde Faura; el alojamiento donde esté. 14 días. Reserva 100€ o 200€. El portal puede seguir; la web es para dejar de pagarle todas las noches.</p>
         <h2>Qué nos mandáis</h2>
         <p>Fotos reales, normas, cómo es el check-in, temporada. Con eso se escribe. Sin milagros de ocupación 100%. Con una página que el huésped pueda reenviar a quien paga la mitad del viaje.</p>
@@ -462,7 +459,7 @@
 <section class="seo-links">
 <div class="container">
 
-<span class="section-tag">Alojamientos en toda España</span>
+<span class="section-tag">Alojamientos en la Comunitat Valenciana</span>
         <h2 class="section-title">Tu casa + la ciudad o costa donde está</h2>
 
 <div class="seo-links-grid">
@@ -499,8 +496,8 @@
                 <p>Sí. Rural y ciudad se escriben distinto que la costa.</p>
             </details>
             <details class="faq-item">
-                <summary>¿Toda España?</summary>
-                <p>Sí. El texto es de tu destino, no un clon de oficio.</p>
+                <summary>¿Solo en Sagunto?</summary>
+                <p>Sí. Hablamos de tu destino y de esa casa, no de un oficio de averías.</p>
             </details>
         </div>
     </div>
@@ -525,9 +522,9 @@
     <div class="container">
         <span class="section-tag">Hablemos</span>
         <h2 class="section-title">¿Vacacional pagando<br>solo comisiones?</h2>
-        <p>WhatsApp. Precio el mismo día. Toda España.</p>
+        <p>WhatsApp. Precio el mismo día. Comunitat Valenciana. También online si encaja.</p>
         <div class="cta-btns">
-            <a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20un%20alquiler%20vacacional%20y%20quiero%20una%20web%20para%20recibir%20reservas%20directas" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
+            <a href="https://wa.me/34611661557?text=Hola%2C%20tengo%20un%20alquiler%20vacacional%20y%20quiero%20una%20web%20para%20recibir%20reservas%20directas" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp</a>
             <a href="/contacto?oficio=Alquiler%20vacacional" class="btn-secondary"><i class="fas fa-paper-plane"></i> Pedir presupuesto</a>
         </div>
     </div>
@@ -537,7 +534,7 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
-                <p>Web profesional, SEO local y automatización útil para negocios de servicios en España. Más llamadas, más WhatsApps, más clientes.</p>
+                <p>Web profesional, SEO local y automatización útil para negocios de servicios en la Comunitat Valenciana. Más llamadas, más WhatsApps, más clientes.</p>
             </div>
             <div class="footer-col">
                 <h4>Servicios</h4>
@@ -560,7 +557,7 @@
             <div class="footer-col">
                 <h4>Contacto</h4>
                 <ul>
-                    <li><a href="https://wa.me/34665327929" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="https://wa.me/34611661557" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
                     <li><a href="mailto:info@ideark.es"><i class="fas fa-envelope"></i> info@ideark.es</a></li>
 </ul>
             </div>
@@ -572,7 +569,7 @@
     </div>
 </footer>
 
-<a href="https://wa.me/34665327929?text=Hola%2C%20tengo%20un%20alquiler%20vacacional%20y%20quiero%20una%20web%20para%20recibir%20reservas%20directas" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/34611661557?text=Hola%2C%20tengo%20un%20alquiler%20vacacional%20y%20quiero%20una%20web%20para%20recibir%20reservas%20directas" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 <script>
 const navbar = document.getElementById('navbar');

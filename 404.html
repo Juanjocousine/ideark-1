@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico?v=20260919" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20260919">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260919">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#080c14">
     <meta charset="UTF-8">
@@ -12,14 +12,21 @@
     <meta name="robots" content="noindex, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
     <style>
         :root{--bg:#080c14;--bg3:#111927;--accent:#00e5ff;--text:#e8edf5;--text2:#8a96a8;--border:rgba(255,255,255,0.07)}
         *{box-sizing:border-box;margin:0;padding:0}
         body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
-        nav{padding:20px 30px;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+        nav{padding:20px 30px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+        .nav-inner{width:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
         .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
         .logo img{width:40px;height:40px;border-radius:50%;display:block;margin-right:10px}
         .logo .logo-word{color:#fff}.logo .logo-word span{color:var(--accent)}
+        .nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500}
+        .nav-cta{background:var(--accent);color:#080c14!important;padding:10px 22px;border-radius:8px;font-weight:700!important}
+        .hamburger{display:none;background:none;border:none;color:white;font-size:1.4rem;cursor:pointer}
         main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
         .card{background:var(--bg3);border:1px solid var(--border);border-radius:24px;padding:60px 50px;text-align:center;max-width:580px;width:100%}
         .code{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;color:var(--accent);margin-bottom:8px}
@@ -28,16 +35,45 @@
         .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
         .btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#080c14;padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none}
         .btn-s{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);color:var(--text);padding:13px 26px;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none}
+        footer{padding:48px 30px 28px;border-top:1px solid var(--border);margin-top:auto}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;max-width:1200px;margin:0 auto 32px}
+        .footer-brand p{font-size:.85rem;max-width:280px}
+        .footer-col h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:16px;color:white}
+        .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+        .footer-col ul li a{color:var(--text2);text-decoration:none;font-size:.85rem}
+        .footer-bottom{max-width:1200px;margin:0 auto;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+        .footer-bottom p,.footer-bottom a{font-size:.82rem;color:var(--text2);text-decoration:none}
+        @media(max-width:900px){
+            .nav-links{display:none}
+            .hamburger{display:block}
+            .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--bg);align-items:center;justify-content:center;gap:32px;z-index:99}
+            .footer-grid{grid-template-columns:1fr 1fr}
+            .footer-brand{grid-column:1/-1}
+        }
         @media(max-width:480px){.card{padding:40px 24px}}
     </style>
 </head>
 <body>
-<nav><a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a></nav>
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#servicios">Servicios</a></li>
+            <li><a href="/#proceso">Cómo trabajamos</a></li>
+            <li><a href="/#proyectos">Proyectos</a></li>
+            <li><a href="/#ciudades">Ciudades</a></li>
+            <li><a href="/#precios">Precios</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contacto" class="nav-cta">Pedir presupuesto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+    </div>
+</nav>
 <main>
     <div class="card">
         <div class="code">404</div>
         <h1>Esta página no existe</h1>
-        <p>La URL no está en Ideark. Puede que esté mal escrita o que se haya movido. Vuelve al inicio o pide presupuesto por WhatsApp.</p>
+        <p>La dirección no está en Ideark. Puede que esté mal escrita o que se haya movido. Vuelve al inicio o pide presupuesto por WhatsApp.</p>
         <div class="btns">
             <a href="/" class="btn-p">Ir al inicio</a>
             <a href="/#ciudades" class="btn-s">Ver ciudades</a>
@@ -45,5 +81,55 @@
         </div>
     </div>
 </main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
+                <p>Web profesional, SEO local y automatización útil para negocios de servicios en la Comunitat Valenciana. Más llamadas, más WhatsApps, más clientes.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="/#servicios">Diseño web profesional</a></li>
+                    <li><a href="/#servicios">SEO local</a></li>
+                    <li><a href="/#servicios">Automatización útil</a></li>
+                    <li><a href="/#precios">Precios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sectores</h4>
+                <ul>
+                    <li><a href="/web-para-jardineros">Web para jardineros</a></li>
+                    <li><a href="/web-para-fontaneros">Web para fontaneros</a></li>
+                    <li><a href="/web-para-electricistas">Web para electricistas</a></li>
+                    <li><a href="/web-para-reformas">Web para reformas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/34611661557" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="mailto:info@ideark.es"><i class="fas fa-envelope"></i> info@ideark.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ideark. Todos los derechos reservados.</p>
+            <p><a href="/aviso-legal">Aviso Legal</a> · <a href="/privacidad">Privacidad</a> · <a href="/cookies">Cookies</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.innerHTML = navLinks.classList.contains('open') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+});
+</script>
+    <script src="/js/config.js"></script>
+    <script src="/js/consent.js" defer></script>
+    <script src="/js/tracking.js" defer></script>
 </body>
 </html>

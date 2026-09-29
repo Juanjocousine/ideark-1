@@ -1,4 +1,4 @@
-﻿.netlify/
+.netlify/
 .DS_Store
 _*.py
 *.zip
