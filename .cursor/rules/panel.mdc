@@ -1,0 +1,5 @@
+---
+description: Parte de estado para el Panel de webs
+alwaysApply: true
+---
+Al terminar cualquier tarea en este repositorio, actualiza estado-panel.json en la raíz: añade una entrada nueva AL PRINCIPIO de "historial" con la fecha de hoy, lo hecho, lo pendiente y una nota de una línea; actualiza "estado" y "actualizado". No borres entradas anteriores. No inventes datos. No incluyas claves, contraseñas, tokens ni datos de clientes. Escribe en español, frases cortas.

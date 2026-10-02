@@ -1,0 +1,19 @@
+{
+  "dominio": "ideark.es",
+  "estado": "Activa",
+  "actualizado": "2026-10-02",
+  "historial": [
+    {
+      "fecha": "2026-10-02",
+      "hecho": [
+        "Quitó las notas internas de ranking y dejó 14 ciudades de la Comunitat Valenciana.",
+        "Ajustó los titles SEO y limitó el sitemap a la Comunitat.",
+        "Actualizó precios a Plan Web 399€, PRO y Premium, y publicó las landings de cada plan.",
+        "Añadió páginas de ciudad en toda España y la landing /empezar.",
+        "Mejoró el formulario de inicio, el portfolio, el NAP y el SEO técnico."
+      ],
+      "pendiente": [],
+      "nota": "Parte inicial generado al crear el panel"
+    }
+  ]
+}
