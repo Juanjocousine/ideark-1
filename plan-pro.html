@@ -45,16 +45,56 @@
         .form-legal label{display:flex;gap:8px;text-transform:none;font-weight:400}
         .form-legal a{color:var(--accent)}
         button{width:100%;background:var(--accent);color:#080c14;border:none;padding:15px;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer}
+    
+        nav#navbar{position:sticky;top:0;z-index:100;display:block;background:rgba(8,12,20,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:14px 30px;display:flex;align-items:center;justify-content:space-between}
+        .nav-links{display:flex;gap:22px;list-style:none}
+        .nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500}
+        .nav-links a:hover{color:#fff}
+        .nav-cta{background:var(--accent);color:#080c14 !important;padding:10px 16px;border-radius:8px;font-weight:700 !important}
+        .hamburger{display:none;background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer}
+        .container{max-width:1200px;margin:0 auto;padding:0 30px}
+        footer{background:#0d1422;border-top:1px solid var(--border);padding:48px 0 24px;margin-top:40px}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+        .footer-brand p,.footer-col a,.footer-bottom p,.footer-bottom a{color:var(--text2);text-decoration:none;font-size:.85rem}
+        .footer-col h4{font-family:Syne,sans-serif;font-size:.9rem;margin-bottom:10px}
+        .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+        .footer-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:16px}
+        @media(max-width:768px){
+            .hamburger{display:block}
+            .nav-links{display:none}
+            .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:#080c14;align-items:center;justify-content:center;gap:22px;z-index:99}
+            .footer-grid{grid-template-columns:1fr 1fr}
+        }
+
     </style>
     <meta property="og:title" content="Plan PRO | Ideark">
     <meta property="og:description" content="890€ + 149€/mes. Hasta 20 páginas y SEO local. El plan para que te encuentren.">
     <meta property="og:image" content="https://ideark.es/og-image.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Offer", "name": "Plan PRO", "price": "890", "priceCurrency": "EUR", "url": "https://ideark.es/plan-pro", "availability": "https://schema.org/InStock", "seller": {"@id": "https://ideark.es/#negocio"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta el PRO?", "acceptedAnswer": {"@type": "Answer", "text": "890 euros de alta y 149 euros al mes, sin permanencia."}}, {"@type": "Question", "name": "¿Cuántas páginas entran?", "acceptedAnswer": {"@type": "Answer", "text": "Hasta veinte, contando oficios y pueblos donde trabajas."}}, {"@type": "Question", "name": "¿Qué tengo que aportar?", "acceptedAnswer": {"@type": "Answer", "text": "Fotos reales, teléfono, horario y la lista de pueblos. Los textos salen de la charla."}}, {"@type": "Question", "name": "¿Cómo me doy de baja?", "acceptedAnswer": {"@type": "Answer", "text": "Con un mensaje. El mensual para en el ciclo siguiente y la web sigue siendo tuya."}}, {"@type": "Question", "name": "¿En cuánto está lista la primera versión?", "acceptedAnswer": {"@type": "Answer", "text": "En catorce días, igual que el resto, si el material llega al principio."}}, {"@type": "Question", "name": "¿El PRO garantiza el número uno?", "acceptedAnswer": {"@type": "Answer", "text": "No. Medimos qué se publica y cómo está la ficha. El puesto depende de la competencia de tu zona."}}]}
+</script>
 </head>
-<body>
-<nav>
-    <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
-    <a class="nav-wa" href="https://wa.me/34611661557?text=Hola,%20me%20interesa%20el%20Plan%20PRO%20(890%E2%82%AC%20%2B%20149%E2%82%AC/mes)" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+<body style="--cbo-color:#7c3aed">
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#servicios">Servicios</a></li>
+            <li><a href="/#proceso">Cómo trabajamos</a></li>
+            <li><a href="/#proyectos">Proyectos</a></li>
+            <li><a href="/#ciudades">Ciudades</a></li>
+            <li><a href="/#precios">Precios</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contacto" class="nav-cta">Pedir presupuesto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+    </div>
 </nav>
+<main>
 <div class="wrap">
     <p class="tag">Recomendado · si quieres que te encuentren</p>
     <h1>Plan PRO: oficio + pueblo en Google</h1>
@@ -101,6 +141,51 @@
         <a href="/plan-premium"><span>Premium · 1.499€ + 199€/mes</span> — hasta 40 páginas y hasta 5 nuevas al mes.</a>
     </div>
 
+    
+<h2>Qué incluye, con detalle</h2>
+<p>El alta son 890 euros y el mensual 149 euros, sin permanencia. Hay hasta veinte páginas: la base del Plan Web más landings de oficio y de pueblo cuando de verdad trabajas allí. Cada mes entran una o dos páginas nuevas, ajustes de textos y el trabajo de ficha de Google. El informe dice qué se ha publicado y qué búsquedas estamos trabajando, sin prometer un puesto.</p>
+<p>WhatsApp automático, si lo activas, responde lo básico y te pasa el aviso. Los anuncios de Google se cotizan aparte porque el presupuesto de clics no es la cuota de la web. Si venías del Plan Web, no vuelves a pagar los 399: sumas 491 euros y quedas en el alta de 890.</p>
+<h2>Qué no incluye</h2>
+<p>No incluye cuarenta páginas ni cinco páginas nuevas cada mes: eso es Premium. No incluye una tienda con cientos de fichas. No incluye gestionar reseñas falsas ni escribir pueblos donde no vas. Si el catálogo o las zonas se disparan, te lo decimos y miramos Premium en vez de estirar el PRO.</p>
+
+<h2>Plazos</h2>
+<p>El calendario habitual son catorce días desde que tenemos fotos, el oficio y el visto bueno del primer esquema. El día uno hacemos una charla de unos veinte minutos por WhatsApp o videollamada. El mismo día sale el precio por escrito. Si reservas el hueco, el día dos o tres pedimos el material que falte: teléfono, zona, horario y dos o tres fotos reales. A mitad de plazo ves la web en el móvil y señalas cambios de texto. El día de la publicación queda online, con llamada y WhatsApp visibles, y te pasamos el acceso.</p>
+<p>Si el material llega a cuentagotas, el plazo se alarga lo mismo que tardes en contestar. No contamos fines de semana como días de trabajo de diseño. Una web con muchas zonas o con fichas de producto no cabe en esos catorce días: eso se dice al principio, no el día trece.</p>
+<h2>Qué tienes que aportar</h2>
+<p>Hace falta tu nombre comercial, el teléfono que quieres publicar, la ciudad o los pueblos donde trabajas de verdad, el horario y una frase clara de a qué te dedicas. Las fotos tienen que ser del trabajo, del local o de la furgoneta, no un banco de imágenes. Si ya tienes logo, lo usamos. Si no, el nombre en texto bien compuesto basta para salir. También necesitamos que confirmes el aviso legal con tus datos y que aceptes la privacidad del formulario.</p>
+<p>No hace falta que escribas los textos enteros. En la charla sacamos los servicios, lo que no haces y cómo te localizan. Si más adelante quieres cambiar una frase, en el Plan Web lo ves con nosotros en ese momento; en PRO y Premium entra en el mensual.</p>
+<h2>Mantenimiento</h2>
+<p>En el Plan Web el hosting del primer año va incluido. A partir del segundo año son 9 euros al mes si sigues con el alojamiento. No hay cuota de cambios obligatoria. Un cambio suelto se cotiza cuando lo pides. En PRO, 149 euros al mes cubren el SEO local, una o dos páginas nuevas al mes y los ajustes de textos y fotos que quepan en ese ritmo. En Premium, 199 euros al mes suben el ritmo hasta cinco páginas nuevas al mes y dan prioridad cuando cubres varias zonas.</p>
+<p>El dominio, si lo compras con nosotros, se renueva cada año y te decimos el importe antes. Si el dominio ya es tuyo, lo apuntamos al hosting sin mover la titularidad. Google Business es tu ficha: te ayudamos a dejarla alineada con la web, y las reseñas las consigues tú con clientes reales.</p>
+<h2>Cómo se da de baja</h2>
+<p>PRO y Premium no tienen permanencia. La baja es un mensaje a info@ideark.es o por WhatsApp, y el mensual se detiene en el ciclo siguiente, sin penalización. La web publicada sigue siendo tuya. Si quieres llevártela, te entregamos los archivos y te explicamos el cambio de DNS. El Plan Web no tiene mensual que cancelar: si dejas el hosting de 9 euros, la web deja de estar alojada con nosotros y te avisamos antes para que puedas moverla.</p>
+<p>La reserva de 100 euros en el Plan Web, o de 200 euros en PRO y Premium, guarda el hueco de catorce días. Si después de la charla no sigues, no hay más cargos. El resto se paga al publicar.</p>
+<h2>Para quién encaja cada plan</h2>
+<p>El Plan Web encaja cuando ya te llaman y solo necesitas una dirección seria que enseñar: cinco páginas, sin cuota. El PRO encaja cuando el cliente te busca por oficio y pueblo y quieres páginas de zona, ficha de Google y un ritmo mensual. Premium encaja cuando hay varias zonas, muchas fichas o varias especialidades y necesitas más páginas al mes. Si dudas, en la charla te decimos uno. No hace falta contratar el grande para parecer más grande.</p>
+<p>Pasar de Web a PRO en los seis primeros meses son 491 euros de diferencia, porque 399 más 491 suman los 890 del alta PRO, y entonces empieza la cuota de 149 euros. Quien entra directo a PRO paga 890 euros de alta, no 399.</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto cuesta el PRO?</h3>
+<p>890 euros de alta y 149 euros al mes, sin permanencia.</p>
+<h3>¿Cuántas páginas entran?</h3>
+<p>Hasta veinte, contando oficios y pueblos donde trabajas.</p>
+<h3>¿Qué tengo que aportar?</h3>
+<p>Fotos reales, teléfono, horario y la lista de pueblos. Los textos salen de la charla.</p>
+<h3>¿Cómo me doy de baja?</h3>
+<p>Con un mensaje. El mensual para en el ciclo siguiente y la web sigue siendo tuya.</p>
+<h3>¿En cuánto está lista la primera versión?</h3>
+<p>En catorce días, igual que el resto, si el material llega al principio.</p>
+<h3>¿El PRO garantiza el número uno?</h3>
+<p>No. Medimos qué se publica y cómo está la ficha. El puesto depende de la competencia de tu zona.</p>
+
+    
+<h2>Semana a semana</h2>
+<p>La primera conversación fija el oficio, la zona y el plan. Si el caso es una web de cinco páginas, se queda en 399 euros. Si hace falta salir por pueblos, se queda en PRO. Si hay muchas fichas o muchas zonas, se queda en Premium. Esa decisión va por escrito, con el alta y, si aplica, la cuota. No se cambia el precio a mitad del diseño porque haya aparecido un pueblo que ya habíamos hablado.</p>
+<p>En los días siguientes montamos la estructura en el móvil: titular, llamada, servicios y formulario. Tú miras si el horario y el teléfono son los buenos. Los cambios de esa revisión entran en el plazo. Un cambio de plan, por ejemplo pasar de cinco páginas a veinte, se presupuesta otra vez porque es otro alcance. La publicación incluye el aviso a info@ideark.es cuando alguien envía el formulario.</p>
+<p>Después de publicar, el Plan Web queda en tus manos salvo el hosting. PRO y Premium siguen con el calendario de páginas. Cada página nueva necesita un pueblo o un servicio real. Si un mes no hay materia, no rellenamos con texto genérico: lo decimos y movemos el hueco. La baja, si llega, no borra el trabajo hecho. Te entregamos lo publicado y paramos el mensual.</p>
+<h2>Comparar sin rodeos</h2>
+<p>Web es pagar una vez y tener la base. PRO es pagar el alta y un mensual para que la web crezca en la zona. Premium es el mismo oficio con más páginas y más prisa. Los tres comparten el plazo de catorce días de la primera versión, el trato directo y el correo info@ideark.es. Los tres dejan fuera los anuncios de pago. Elige por el número de páginas que de verdad vas a usar, no por el nombre del plan.</p>
+
+    <p>La primera versión se revisa en el móvil antes de publicarla. Ahí se corrige el horario, el teléfono y el orden de los servicios. Los cambios de esa pasada entran en los catorce días. Un alcance nuevo, como añadir diez pueblos, se presupuesta aparte.</p>
     <form id="formulario" name="contacto-ideark" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias">
         <input type="hidden" name="form-name" value="contacto-ideark">
         <input type="hidden" name="plan" value="PRO">
@@ -117,6 +202,54 @@
         <button type="submit">Enviar</button>
     </form>
 </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
+                <p>Web profesional, SEO local y automatización útil para negocios de servicios en la Comunitat Valenciana.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="/plan-web">Plan Web 399€</a></li>
+                    <li><a href="/plan-pro">Plan PRO</a></li>
+                    <li><a href="/plan-premium">Plan Premium</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sectores</h4>
+                <ul>
+                    <li><a href="/web-para-fontaneros">Fontaneros</a></li>
+                    <li><a href="/web-para-restaurantes">Restaurantes</a></li>
+                    <li><a href="/web-para-clinicas">Clínicas</a></li>
+                    <li><a href="/web-para-autonomos">Autónomos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/34611661557" target="_blank" rel="noopener noreferrer">WhatsApp 611 661 557</a></li>
+                    <li><a href="tel:+34611661557">Llamar</a></li>
+                    <li><a href="mailto:info@ideark.es">info@ideark.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ideark · Faura (Valencia)</p>
+            <p><a href="/aviso-legal">Aviso Legal</a> · <a href="/privacidad">Privacidad</a> · <a href="/cookies">Cookies</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+const hamburger=document.getElementById('hamburger');
+const navLinks=document.getElementById('navLinks');
+if(hamburger&&navLinks){
+  hamburger.addEventListener('click',()=>{navLinks.classList.toggle('open');});
+}
+</script>
 <script src="/js/config.js"></script>
 <script src="/js/consent.js" defer></script>
 <script src="/js/tracking.js" defer></script>

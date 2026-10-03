@@ -33,8 +33,8 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://ideark.es/#business",
+  "@type": ["ProfessionalService", "Organization"],
+  "@id": "https://ideark.es/#negocio",
   "name": "Ideark",
   "url": "https://ideark.es",
   "description": "Diseño web profesional, SEO local y automatización útil para negocios de servicios en Sagunto, Camp de Morvedre, provincia de Valencia y provincia de Castellón.",
@@ -1051,6 +1051,7 @@
     </div>
 </nav>
 
+<main>
 <!-- HERO -->
 <section class="hero">
     <div class="hero-bg"></div>
@@ -1643,6 +1644,7 @@
 </section>
 
 <!-- FOOTER -->
+</main>
 <footer>
     <div class="container">
         <div class="footer-grid">
@@ -1749,5 +1751,11 @@ document.querySelectorAll('.srv-card, .paso, .precio-card, .porque-item, .caso-c
     <script src="/js/config.js"></script>
     <script src="/js/consent.js" defer></script>
     <script src="/js/tracking.js" defer></script>
+
+<form name="chatbot" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="origen"><input name="servicio"><textarea name="detalles"></textarea>
+  <input name="zona"><input name="nombre"><input name="telefono"><input name="email"><input name="consentimiento">
+</form>
+
 </body>
 </html>
