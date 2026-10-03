@@ -27,9 +27,25 @@
         .legal-body h1{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;margin-bottom:8px}
         .legal-body .fecha{font-size:.82rem;color:var(--text2);margin-bottom:40px}
         .legal-body h2{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:white;margin:32px 0 12px}
-        .legal-body p{font-size:.92rem;color:var(--text2);line-height:1.8;margin-bottom:14px}
+        .legal-body p,.legal-body li{font-size:.92rem;color:var(--text2);line-height:1.8;margin-bottom:14px}
+        .legal-body ul{margin:0 0 14px 20px}
         .legal-body a{color:var(--accent);text-decoration:none}
+        .container{max-width:1200px;margin:0 auto;padding:0 30px}
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 0 30px}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+        .footer-brand p{font-size:.85rem;color:var(--text2);line-height:1.7;max-width:280px}
+        .footer-col h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:16px;color:white}
+        .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+        .footer-col ul li a{color:var(--text2);text-decoration:none;font-size:.85rem}
+        .footer-col ul li a:hover{color:var(--accent)}
+        .footer-bottom{padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+        .footer-bottom p{font-size:.82rem;color:var(--text2)}
+        .footer-bottom a{color:var(--text2);text-decoration:none}
+        .footer-bottom a:hover{color:var(--accent)}
+        @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1 / -1}}
     </style>
+    <meta name="description" content="Aviso legal de ideark.es. Titular Juan José Sánchez Cosín, NIF 44802710K, Calle Rubau 2, Faura. Contacto: info@ideark.es.">
+    <link rel="canonical" href="https://ideark.es/aviso-legal">
     <meta property="og:image" content="https://ideark.es/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -43,7 +59,15 @@
     <p class="fecha">Última actualización: mayo 2026</p>
 
     <h2>1. Datos identificativos</h2>
-    <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa que el titular del sitio web <strong>ideark.es</strong> es <strong>Juan José Sánchez Cosín</strong>, con domicilio en Calle Rubau 2, 46512 Faura (Valencia), España. Email de contacto: <a href="mailto:info@ideark.es">info@ideark.es</a>.</p>
+    <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informan los datos del titular de <strong>ideark.es</strong>:</p>
+    <ul>
+        <li><strong>Denominación:</strong> Juan José Sánchez Cosín</li>
+        <li><strong>Nombre comercial:</strong> Ideark</li>
+        <li><strong>NIF:</strong> 44802710K</li>
+        <li><strong>Domicilio:</strong> Calle Rubau 2, 46512 Faura (Valencia)</li>
+        <li><strong>Teléfono:</strong> 603 018 190</li>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:info@ideark.es">info@ideark.es</a></li>
+    </ul>
 
     <h2>2. Objeto y ámbito de aplicación</h2>
     <p>El presente Aviso Legal regula el acceso y uso del sitio web ideark.es. El acceso al sitio web implica la aceptación plena y sin reservas de todas las disposiciones incluidas en este Aviso Legal.</p>
@@ -58,8 +82,50 @@
     <p>Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier controversia, las partes se someten a los Juzgados y Tribunales de Valencia, con renuncia expresa a cualquier otro fuero.</p>
 
     <h2>6. Contacto</h2>
-    <p>Para cualquier consulta relacionada con este Aviso Legal, puede contactarnos en <a href="mailto:info@ideark.es">info@ideark.es</a>.</p>
+    <p>Para cualquier consulta relacionada con este Aviso Legal, puede escribir a <a href="mailto:info@ideark.es">info@ideark.es</a>.</p>
 </div>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" aria-label="Ideark"><img src="/logo.png" alt="Ideark" width="40" height="40"><span class="logo-word">ide<span>ark</span></span></a>
+                <p>Web profesional, SEO local y automatización útil para negocios de servicios en la Comunitat Valenciana. Más llamadas, más WhatsApps, más clientes.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="/#servicios">Diseño web profesional</a></li>
+                    <li><a href="/#servicios">SEO local</a></li>
+                    <li><a href="/#servicios">Automatización útil</a></li>
+                    <li><a href="/plan-web">Plan Web 399€</a></li>
+                    <li><a href="/plan-pro">Plan PRO</a></li>
+                    <li><a href="/plan-premium">Plan Premium</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sectores</h4>
+                <ul>
+                    <li><a href="/web-para-jardineros">Web para jardineros</a></li>
+                    <li><a href="/web-para-fontaneros">Web para fontaneros</a></li>
+                    <li><a href="/web-para-electricistas">Web para electricistas</a></li>
+                    <li><a href="/web-para-reformas">Web para reformas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/34611661557" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> 611 661 557</a></li>
+                    <li><a href="tel:+34611661557"><i class="fas fa-phone"></i> Llamar</a></li>
+                    <li><a href="mailto:info@ideark.es"><i class="fas fa-envelope"></i> info@ideark.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ideark · Diseño web y SEO local · Faura (Sagunto)</p>
+            <p><a href="/aviso-legal">Aviso Legal</a> · <a href="/privacidad">Privacidad</a> · <a href="/cookies">Cookies</a></p>
+        </div>
+    </div>
+</footer>
     <script src="/js/config.js"></script>
     <script src="/js/consent.js" defer></script>
     <script src="/js/tracking.js" defer></script>
