@@ -6,6 +6,18 @@
     {
       "fecha": "2026-10-03",
       "hecho": [
+        "Corrigió las redirecciones .html: una 301 por página, porque Netlify no admite el comodín.",
+        "llms.txt e IndexNow publicados"
+      ],
+      "pendiente": [
+        "el propietario confirma en qué cuenta de Netlify está ideark.es y que los avisos del formulario `contacto-ideark` llegan a su email",
+        "pedir indexación de los planes y posts ampliados"
+      ],
+      "nota": "La cabecera UTF-8 de llms.txt se mantiene en netlify.toml."
+    },
+    {
+      "fecha": "2026-10-03",
+      "hecho": [
         "llms.txt e IndexNow publicados"
       ],
       "pendiente": [
