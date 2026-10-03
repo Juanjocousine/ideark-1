@@ -43,3 +43,22 @@
   to = "https://ideark.es/:splat"
   status = 301
   force = true
+
+# /index.html antes que /:name.html: si no, acabaría en /index.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/:name.html"
+  to = "/blog/:name"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:name.html"
+  to = "/:name"
+  status = 301
+  force = true
