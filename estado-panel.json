@@ -6,6 +6,17 @@
     {
       "fecha": "2026-10-03",
       "hecho": [
+        "llms.txt e IndexNow publicados"
+      ],
+      "pendiente": [
+        "el propietario confirma en qué cuenta de Netlify está ideark.es y que los avisos del formulario `contacto-ideark` llegan a su email",
+        "pedir indexación de los planes y posts ampliados"
+      ],
+      "nota": "Cabecera UTF-8 para llms.txt. Schema de la home alineado con el aviso legal."
+    },
+    {
+      "fecha": "2026-10-03",
+      "hecho": [
         "Activó GA4, los eventos de contacto y el origen del formulario.",
         "Completó los legales, el tono, los planes, las ciudades, los sectores y el blog.",
         "Unificó el schema del negocio y las redirecciones de las URLs .html.",
