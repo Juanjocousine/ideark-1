@@ -1,0 +1,25 @@
+/* Chatbot oficio — estilos aislados (prefijo cbo-). No depende de site.css. */
+.cbo-button{position:fixed;right:18px;bottom:88px;z-index:9990;width:58px;height:58px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--cbo-color,#1f2937);color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.cbo-button:hover{transform:scale(1.06)}
+.cbo-window{position:fixed;right:18px;bottom:156px;z-index:9991;width:360px;max-width:calc(100vw - 32px);height:520px;max-height:calc(100vh - 180px);
+  background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25);display:none;flex-direction:column;overflow:hidden;
+  font-family:inherit;font-size:15px;color:#1f2937}
+.cbo-window.cbo-open{display:flex}
+.cbo-header{background:var(--cbo-color,#1f2937);color:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}
+.cbo-close{background:none;border:0;color:#fff;font-size:24px;line-height:1;cursor:pointer}
+.cbo-messages{flex:1;overflow-y:auto;padding:14px;background:#f6f7f9}
+.cbo-msg{margin-bottom:10px;display:flex;flex-direction:column}
+.cbo-bubble{max-width:85%;padding:9px 12px;border-radius:12px;line-height:1.4;word-wrap:break-word}
+.cbo-bot .cbo-bubble{background:#fff;border:1px solid #e5e7eb;align-self:flex-start}
+.cbo-user .cbo-bubble{background:var(--cbo-color,#1f2937);color:#fff;align-self:flex-end}
+.cbo-options{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.cbo-option{background:#fff;border:1px solid var(--cbo-color,#1f2937);color:var(--cbo-color,#1f2937);border-radius:18px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.cbo-option:hover{background:var(--cbo-color,#1f2937);color:#fff}
+.cbo-input{display:flex;border-top:1px solid #e5e7eb;margin:0}
+.cbo-input input{flex:1;border:0;padding:12px 14px;font:inherit;font-size:16px;outline:none;min-width:0}
+.cbo-input button{border:0;background:var(--cbo-color,#1f2937);color:#fff;padding:0 16px;cursor:pointer;font-size:16px}
+@media (max-width:600px){
+  .cbo-window{right:8px;left:8px;width:auto;bottom:240px;height:70vh}
+  .cbo-button{right:12px;bottom:168px}
+}
