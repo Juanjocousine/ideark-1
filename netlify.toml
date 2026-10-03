@@ -44,22 +44,281 @@
   status = 301
   force = true
 
-# /index.html antes que /:name.html: si no, acabaría en /index.
+# Redirecciones .html -> URL limpia, una por página (Netlify no admite /:name.html).
 [[redirects]]
   from = "/index.html"
   to = "/"
   status = 301
   force = true
 
+
 [[redirects]]
-  from = "/blog/:name.html"
-  to = "/blog/:name"
+  from = "/blog/aparecer-google-maps-negocio-local.html"
+  to = "/blog/aparecer-google-maps-negocio-local"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/:name.html"
-  to = "/:name"
+  from = "/blog/chatbot-ia-para-negocios-locales.html"
+  to = "/blog/chatbot-ia-para-negocios-locales"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/como-conseguir-clientes-google-pyme.html"
+  to = "/blog/como-conseguir-clientes-google-pyme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/cuanto-cuesta-web-autonomos.html"
+  to = "/blog/cuanto-cuesta-web-autonomos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/cuanto-cuesta-web-fontanero.html"
+  to = "/blog/cuanto-cuesta-web-fontanero"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/cuanto-cuesta-web-restaurante.html"
+  to = "/blog/cuanto-cuesta-web-restaurante"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/kit-digital-2026-que-es.html"
+  to = "/blog/kit-digital-2026-que-es"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/web-o-instagram-negocio-local.html"
+  to = "/blog/web-o-instagram-negocio-local"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/aviso-legal.html"
+  to = "/aviso-legal"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contacto.html"
+  to = "/contacto"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cookies.html"
+  to = "/cookies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-alzira.html"
+  to = "/diseno-web-alzira"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-borriana.html"
+  to = "/diseno-web-borriana"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-castellon.html"
+  to = "/diseno-web-castellon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-cullera.html"
+  to = "/diseno-web-cullera"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-gandia.html"
+  to = "/diseno-web-gandia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-lliria.html"
+  to = "/diseno-web-lliria"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-ontinyent.html"
+  to = "/diseno-web-ontinyent"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-paterna.html"
+  to = "/diseno-web-paterna"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-sagunto.html"
+  to = "/diseno-web-sagunto"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-torrent.html"
+  to = "/diseno-web-torrent"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-valencia.html"
+  to = "/diseno-web-valencia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-vila-real.html"
+  to = "/diseno-web-vila-real"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-vinaros.html"
+  to = "/diseno-web-vinaros"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/diseno-web-xativa.html"
+  to = "/diseno-web-xativa"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/empezar.html"
+  to = "/empezar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gracias.html"
+  to = "/gracias"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plan-premium.html"
+  to = "/plan-premium"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plan-pro.html"
+  to = "/plan-pro"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plan-web.html"
+  to = "/plan-web"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacidad.html"
+  to = "/privacidad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-abogados.html"
+  to = "/web-para-abogados"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-alquiler-vacacional.html"
+  to = "/web-para-alquiler-vacacional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-autonomos.html"
+  to = "/web-para-autonomos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-clinicas.html"
+  to = "/web-para-clinicas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-electricistas.html"
+  to = "/web-para-electricistas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-fontaneros.html"
+  to = "/web-para-fontaneros"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-inmobiliarias.html"
+  to = "/web-para-inmobiliarias"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-jardineros.html"
+  to = "/web-para-jardineros"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-peluquerias.html"
+  to = "/web-para-peluquerias"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-reformas.html"
+  to = "/web-para-reformas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-restaurantes.html"
+  to = "/web-para-restaurantes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-talleres.html"
+  to = "/web-para-talleres"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-para-veterinarios.html"
+  to = "/web-para-veterinarios"
   status = 301
   force = true
 
