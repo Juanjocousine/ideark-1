@@ -3,7 +3,7 @@
    Google Ads: AW-XXXX + etiquetas de conversión Lead y WhatsApp
    Search Console: código de verificación meta */
 window.IDEARK_CONFIG = {
-  ga4: "",
+  ga4: "G-KML65RB1SH",
   gtm: "",
   metaPixel: "",
   googleAdsId: "",

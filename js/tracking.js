@@ -18,14 +18,26 @@
       if (name === "generate_lead" && cfg.googleAdsId && cfg.googleAdsLead) {
         window.gtag("event", "conversion", { send_to: cfg.googleAdsId + "/" + cfg.googleAdsLead });
       }
-      if (name === "contact" && cfg.googleAdsId && cfg.googleAdsWhatsapp) {
+      if (name === "click_whatsapp" && cfg.googleAdsId && cfg.googleAdsWhatsapp) {
         window.gtag("event", "conversion", { send_to: cfg.googleAdsId + "/" + cfg.googleAdsWhatsapp });
       }
     }
     if (typeof window.fbq === "function") {
       if (name === "generate_lead") window.fbq("track", "Lead");
-      if (name === "contact") window.fbq("track", "Contact");
+      if (name === "click_whatsapp" || name === "click_llamar") window.fbq("track", "Contact");
     }
+  }
+
+  function campoOculto(form, nombre, valor) {
+    if (!valor) return;
+    var input = form.querySelector('input[type="hidden"][name="' + nombre + '"]');
+    if (!input) {
+      input = document.createElement("input");
+      input.type = "hidden";
+      input.name = nombre;
+      form.appendChild(input);
+    }
+    if (!input.value) input.value = valor;
   }
 
   document.querySelectorAll("form[name='contacto-ideark']").forEach(function (form) {
@@ -48,6 +60,7 @@
     var ciudad = params.get("ciudad");
     var ciudadInput = form.querySelector('[name="ciudad"]');
     if (ciudad && ciudadInput && !ciudadInput.value) ciudadInput.value = ciudad;
+    campoOculto(form, "ciudad", ciudad);
 
     var plan = params.get("plan");
     var planInput = form.querySelector('[name="plan"]');
@@ -59,15 +72,16 @@
     var oficio = params.get("oficio");
     var mensaje = form.querySelector('[name="mensaje"]');
     if (oficio && mensaje && !mensaje.value) mensaje.value = "Oficio: " + oficio;
+    campoOculto(form, "oficio", oficio);
   });
 
   document.addEventListener("click", function (ev) {
     var a = ev.target.closest("a");
     if (!a || !a.href) return;
     if (a.href.indexOf("wa.me") !== -1 || a.href.indexOf("whatsapp") !== -1) {
-      fire("contact", { method: "whatsapp", page: location.pathname });
+      fire("click_whatsapp", { method: "whatsapp", page: location.pathname });
     } else if (a.href.indexOf("tel:") === 0) {
-      fire("contact", { method: "phone", page: location.pathname });
+      fire("click_llamar", { method: "phone", page: location.pathname });
     }
   });
 
