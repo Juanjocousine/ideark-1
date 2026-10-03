@@ -5,3 +5,4 @@ _*.py
 __pycache__/
 *.pyc
 logo-source.jpg
+PROMPT-CURSOR.md
