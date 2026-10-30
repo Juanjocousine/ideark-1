@@ -22,10 +22,10 @@ window.CHATBOT_OFICIO = {
     },
     zonas: ['Sagunto', 'Valencia', 'Castellón', 'Paterna', 'Torrent', 'Gandia', 'Alzira', 'Xàtiva', 'Cullera', 'Llíria', 'Ontinyent', 'Vila-real', 'Borriana', 'Vinaròs'],
     servicios: [
-        { nombre: 'Una web para mi negocio', precio: 'Plan Web 399 € · PRO 890 € + 149 €/mes · Premium 1.499 € + 199 €/mes', preguntas: [
+        { nombre: 'Una web para mi negocio', precio: 'Web básica 199 € + 49 €/mes · Web a medida con presupuesto · Chatbot y automatizaciones aparte', preguntas: [
             { texto: '¿A qué se dedica tu negocio?', botones: ['Oficio / reformas', 'Restaurante / bar', 'Clínica / salud', 'Comercio', 'Otro'] },
             { texto: '¿Tienes web ahora?', botones: ['No', 'Sí, pero anticuada', 'Sí'] },
-            { texto: '¿Qué plan te encaja?', botones: ['Plan Web', 'Plan PRO', 'Premium', 'Aún no lo sé'] }
+            { texto: '¿Qué plan te encaja?', botones: ['Web básica', 'Web a medida', 'Chatbot o agenda', 'Aún no lo sé'] }
         ]},
         { nombre: 'Aparecer en Google (SEO local)', preguntas: [
             { texto: '¿Tienes ficha de Google Business?', botones: ['Sí', 'No', 'No lo sé'] },

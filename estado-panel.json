@@ -1,8 +1,22 @@
 {
   "dominio": "ideark.es",
   "estado": "Activa",
-  "actualizado": "2026-10-03",
+  "actualizado": "2026-10-30",
   "historial": [
+    {
+      "fecha": "2026-10-30",
+      "hecho": [
+        "Quitó el texto de relleno sin sentido de las 27 páginas de ciudad y de oficio; vuelven a tener su texto real.",
+        "Nueva oferta: Web básica 199 € + 49 €/mes, web a medida con presupuesto y chatbot o automatizaciones aparte.",
+        "Reescribió /plan-web, /plan-pro y /plan-premium con la oferta nueva, sin cambiar las URLs.",
+        "Actualizó precios en portada, landings, blog, llms.txt y el asistente de la web."
+      ],
+      "pendiente": [
+        "pedir en Search Console que vuelva a rastrear las 27 landings y las 3 páginas de planes",
+        "revisar en unas semanas si suben las impresiones"
+      ],
+      "nota": "El relleno entró el 3 de octubre; se deshizo solo ese cambio y se mantuvieron las mejoras posteriores."
+    },
     {
       "fecha": "2026-10-03",
       "hecho": [
