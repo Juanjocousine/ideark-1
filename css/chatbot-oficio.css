@@ -23,3 +23,7 @@
   .cbo-window{right:8px;left:8px;width:auto;bottom:240px;height:70vh}
   .cbo-button{right:12px;bottom:168px}
 }
+.cbo-input{display:flex!important;gap:8px;padding:10px;background:#fff;border-top:1px solid #e5e7eb}
+.cbo-input input{flex:1 1 auto!important;width:auto!important;min-width:0;height:42px;padding:0 12px;border:1px solid #d1d5db;border-radius:10px;background:#fff!important;color:#1f2937!important;font-size:16px}
+.cbo-input button{flex:0 0 44px!important;width:44px!important;height:42px;padding:0;border:0;border-radius:10px}
+.cbo-header strong{white-space:nowrap;color:#fff!important}

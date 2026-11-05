@@ -6,6 +6,21 @@
     {
       "fecha": "2026-11-05",
       "hecho": [
+        "Chatbot con imagen de agente robot y botón para probarlo en /plan-premium; arreglado el campo de escribir en móvil.",
+        "Añadidos dos artículos locales al blog.",
+        "Reforzado el SEO local de Sagunto, Paterna y Llíria y los enlaces a oficios con menos enlaces."
+      ],
+      "pendiente": [
+        "Añadir las webs de prueba como ejemplos cuando se localicen.",
+        "Medir conversiones antes de hacer anuncios.",
+        "Añadir foto real.",
+        "Actualizar ficha de Google y Facebook."
+      ],
+      "nota": "Dos URLs nuevas en el blog; ninguna cambiada."
+    },
+    {
+      "fecha": "2026-11-05",
+      "hecho": [
         "Quitó frases que aparentaban clientes y aclaró que el portfolio son proyectos propios y de familia.",
         "Añadió capturas al portfolio y la página /sobre-mi.",
         "Publicó IVA, coste del primer año y promesas únicas de 20 minutos y 24 h.",

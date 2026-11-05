@@ -25,7 +25,8 @@
     btn.id = 'cboButton';
     btn.className = 'cbo-button';
     btn.setAttribute('aria-label', 'Abrir asistente de ' + C.oficio);
-    btn.innerHTML = '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2z"/></svg>';
+    var ROBOT = '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none"><path d="M12 2v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="2.4" r="1.3" fill="currentColor"/><rect x="4" y="6" width="16" height="13" rx="4" fill="currentColor"/><circle cx="9" cy="12" r="1.7" fill="#7c3aed"/><circle cx="15" cy="12" r="1.7" fill="#7c3aed"/><path d="M9 15.8h6" stroke="#7c3aed" stroke-width="1.6" stroke-linecap="round"/><rect x="1.5" y="10" width="2" height="5" rx="1" fill="currentColor"/><rect x="20.5" y="10" width="2" height="5" rx="1" fill="currentColor"/></svg>';
+    btn.innerHTML = ROBOT;
 
     var win = document.createElement('div');
     win.id = 'cboWindow';
@@ -33,7 +34,7 @@
     win.setAttribute('role', 'dialog');
     win.setAttribute('aria-label', 'Asistente ' + C.marca);
     win.innerHTML =
-        '<div class="cbo-header"><strong>' + esc(C.titulo || ('Asistente ' + C.marca)) + '</strong>' +
+        '<div class="cbo-header"><strong style="display:flex;align-items:center;gap:8px">' + ROBOT + esc(C.titulo || ('Asistente ' + C.marca)) + '</strong>' +
         '<button type="button" class="cbo-close" aria-label="Cerrar">×</button></div>' +
         '<div class="cbo-messages" aria-live="polite"></div>' +
         '<form class="cbo-input" autocomplete="on"><input type="text" placeholder="Escribe aquí..." aria-label="Mensaje">' +
