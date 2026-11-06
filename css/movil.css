@@ -1,0 +1,18 @@
+/* Menu movil a pantalla completa y botones flotantes alineados */
+@media (max-width:768px){
+  nav:has(.nav-links.open),html.menu-abierto nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;transform:none!important;filter:none!important}
+  html:has(.nav-links.open),html.menu-abierto{overflow:hidden}
+  .nav-links.open{position:fixed!important;inset:0!important;width:100%!important;height:100vh!important;height:100dvh!important;z-index:1000!important;background:#080c14!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:22px!important;padding:90px 24px 40px!important;margin:0!important;overflow-y:auto!important}
+  .nav-links.open li{list-style:none}
+  .nav-links.open a{font-size:1.25rem!important;color:#e8edf5!important}
+  .nav-links.open .nav-cta{color:#080c14!important;padding:12px 26px!important;font-size:1.05rem!important}
+  .hamburger{position:relative;z-index:1001!important;width:44px;height:44px;display:flex!important;align-items:center;justify-content:center;padding:0!important;font-size:1.5rem!important}
+  .logo{position:relative;z-index:1001}
+  html:has(.nav-links.open) .wa-float,html:has(.nav-links.open) .cbo-button,html.menu-abierto .wa-float,html.menu-abierto .cbo-button{display:none!important}
+}
+.wa-float{right:20px!important;bottom:20px!important;width:56px!important;height:56px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;line-height:1!important}
+.wa-float i{margin:0!important;line-height:1!important}
+.cbo-button{right:20px!important;bottom:88px!important;width:56px!important;height:56px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important}
+.cbo-button svg{display:block;margin:0!important}
+.cbo-window{right:20px!important;bottom:156px!important}
+@media (max-width:480px){.cbo-window{left:8px!important;right:8px!important;bottom:156px!important;max-height:calc(100dvh - 180px)!important}}
