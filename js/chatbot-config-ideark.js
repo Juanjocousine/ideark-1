@@ -22,7 +22,7 @@ window.CHATBOT_OFICIO = {
     },
     zonas: ['Sagunto', 'Valencia', 'Castellón', 'Paterna', 'Torrent', 'Gandia', 'Alzira', 'Xàtiva', 'Cullera', 'Llíria', 'Ontinyent', 'Vila-real', 'Borriana', 'Vinaròs'],
     servicios: [
-        { nombre: 'Una web para mi negocio', precio: 'Web básica 199 € + 49 €/mes · Web a medida con presupuesto · Chatbot y automatizaciones aparte', preguntas: [
+        { nombre: 'Una web para mi negocio', precio: 'Web básica 199 € + 49 €/mes · Web a medida desde 699 € + 149 €/mes · Chatbot y automatizaciones aparte', preguntas: [
             { texto: '¿A qué se dedica tu negocio?', botones: ['Oficio / reformas', 'Restaurante / bar', 'Clínica / salud', 'Comercio', 'Otro'] },
             { texto: '¿Tienes web ahora?', botones: ['No', 'Sí, pero anticuada', 'Sí'] },
             { texto: '¿Qué plan te encaja?', botones: ['Web básica', 'Web a medida', 'Chatbot o agenda', 'Aún no lo sé'] }
