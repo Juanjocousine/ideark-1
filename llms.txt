@@ -1,13 +1,13 @@
 # Ideark
 
-> Ideark es el estudio de diseño web y SEO local de Juanjo Sánchez (Juan José Sánchez Cosín), con sede en Faura, junto a Sagunto (Valencia). Hace webs para autónomos y negocios locales que quieren más llamadas y WhatsApps, sobre todo en Sagunto, Puerto de Sagunto y el Camp de Morvedre.
+> Ideark es el estudio de diseño web y SEO local de Juanjo Sánchez (Juan José Sánchez Cosín), con sede en Sagunto (Valencia). Hace webs para autónomos y negocios locales que quieren más llamadas y WhatsApps, sobre todo en Sagunto, Puerto de Sagunto y el Camp de Morvedre.
 
 ## Datos clave
 
-- Quién: Juanjo Sánchez hace las webs y atiende a los clientes en persona, sin comerciales.
-- Dónde: Faura (Valencia), junto a Sagunto. Zona principal: Sagunto, Puerto de Sagunto, Camp de Morvedre, Puçol y El Puig. También Valencia, Castellón y el resto de la Comunitat Valenciana a distancia.
+- Quién: Juanjo Sánchez, de Sagunto, Técnico Superior en Desarrollo de Aplicaciones Web (DAW) y Multiplataforma (DAM). Hace las webs y atiende a los clientes en persona, sin comerciales. También desarrolla apps y juegos para móvil y automatizaciones (chatbots, citas, avisos por WhatsApp).
+- Dónde: Sagunto (Valencia), junto a Sagunto. Zona principal: Sagunto, Puerto de Sagunto, Camp de Morvedre, Puçol y El Puig. También Valencia, Castellón y el resto de la Comunitat Valenciana a distancia.
 - Web básica: 199 € de alta + 49 €/mes + IVA. 5 páginas, hosting, dominio y cambios pequeños. Lista en unos 14 días. Sin permanencia.
-- Web a medida con SEO local: desde 699 € de alta + 149 €/mes + IVA.
+- Web a medida con SEO local: desde 499 € de alta + 49 €/mes + IVA.
 - Chatbot, agenda de citas y automatizaciones: presupuesto aparte.
 - Presupuesto cerrado por escrito en 24 horas.
 - Contacto: WhatsApp y teléfono 611 661 557 · info@ideark.es · https://ideark.es/contacto
@@ -23,12 +23,12 @@
 ## Planes y precios
 
 - [Web básica 199€ + 49€/mes | 5 páginas con mantenimiento](https://ideark.es/plan-web): Web de 5 páginas por 199 € y 49 €/mes con hosting, dominio .es, SSL y cambios pequeños. Lista en 14 días. Precios + IVA. Sin permanencia. Sagunto y Comunitat Valenciana.
-- [Web a medida y SEO local desde 699 €](https://ideark.es/plan-pro): Web a medida con diseño propio, páginas de oficio y pueblo, y SEO local mes a mes. Desde 699 € + 149 €/mes + IVA. Presupuesto por escrito en 24 h.
+- [Web a medida y SEO local desde 499 €](https://ideark.es/plan-pro): Web a medida con diseño propio, páginas de oficio y pueblo, y SEO local incluido. Desde 499 € + 49 €/mes + IVA. Presupuesto por escrito en 24 h.
 - [Chatbot, agenda de citas y automatización para negocios](https://ideark.es/plan-premium): Chatbot que responde 24 h, agenda de citas online, recordatorios automáticos y avisos al WhatsApp para negocios locales. Se presupuesta aparte. Sagunto y Valencia.
 
 ## Sobre Ideark
 
-- [Sobre mí: Juanjo Sánchez, diseño web en Sagunto](https://ideark.es/sobre-mi): Soy Juanjo Sánchez, de Faura. Hago webs y SEO local para negocios de Sagunto y Camp de Morvedre, y hablas siempre conmigo. Conoce cómo trabajo.
+- [Juanjo Sánchez, desarrollador web y de apps en Sagunto](https://ideark.es/sobre-mi): Juanjo Sánchez, de Sagunto: Técnico Superior en DAW y DAM. Webs con SEO local, apps, juegos y automatizaciones para negocios de Sagunto y comarca.
 - [Preguntas frecuentes: precios, plazos y zona](https://ideark.es/preguntas-frecuentes): Cuánto cuesta una web con Ideark, qué incluye, cuánto tarda y en qué zona trabaja. Respuestas directas de Juanjo Sánchez, diseño web en Sagunto.
 - [Contacto — Presupuesto gratuito en 24 horas](https://ideark.es/contacto): Contacta con Ideark para solicitar presupuesto gratuito de tu web. Respondemos en menos de 24 horas. Sin compromiso.
 
@@ -81,3 +81,21 @@
 - [¿Cuánto cuesta una web en Sagunto en 2026?](https://ideark.es/blog/cuanto-cuesta-web-sagunto): Cuánto cuesta una web para un negocio de Sagunto en 2026: precios publicados en la zona, qué incluyen y cuándo compensa pagar más.
 - [Kit Digital 2026: ¿sigue abierto?](https://ideark.es/blog/kit-digital-2026-que-es): ¿Se puede pedir el Kit Digital en 2026? Estado de las convocatorias de Red.es, plazos cerrados y qué hacer si te denegaron la ayuda.
 - [¿Web o Instagram para un negocio local?](https://ideark.es/blog/web-o-instagram-negocio-local): Instagram no sustituye una web si te buscan en Google. Qué hace cada uno, cuándo basta la red y cuándo un autónomo necesita página propia.
+
+## Webs propias de Juanjo Sánchez (proyectos que crea, posiciona y gestiona)
+
+Servicios de mantenimiento y oficios en Sagunto y comarca:
+- https://multiserviciossagunto.es — web central de oficios por pueblo en el Camp de Morvedre
+- https://fontanero-sagunto.es — fontanería y urgencias
+- https://electricistasagunto.es — electricista
+- https://pintorsagunto.es — pintor, con simulador de color
+- https://albanilsagunto.es — albañilería y pladur
+- https://reformacocinasagunto.es — reforma de cocinas
+- https://reformabanosagunto.es — reforma de baños
+- https://jardinerosagunto.es — jardinería y mantenimiento
+- https://limpiezasagunto.es — limpieza de casas, comunidades y locales
+- https://mudanzassagunto.es — mudanzas y portes
+
+Gestión de propiedades y alquiler vacacional en Sagunto y comarca:
+- https://gestionvacacionalsagunto.es — captación de propietarios
+- https://vacacionessagunto.es — reservas para huéspedes
